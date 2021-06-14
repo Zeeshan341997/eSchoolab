@@ -55,21 +55,41 @@ body{
     margin: 0 15px;
 }
 
+.logo{
+    display: flex;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.login-btn img{
+    height: 30px;
+    width: 30px;
+}
+
 header{
     width: calc(100% - 100px);
     margin-left: 100px;
 }
 
 nav{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 10px;
+    margin: 0 30px;
 }
 
 .page-header{
     list-style-type: none;
     display: inline-block;
-    margin-right: 60px;
 }
 
 .page-header:last-child{
@@ -78,7 +98,7 @@ nav{
 .page-header a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     position: relative;
 }
