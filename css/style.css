@@ -56,8 +56,79 @@ body{
 }
 
 header{
-    width: calc(100% -100px);
+    width: calc(100% - 100px);
     margin-left: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.page-header{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.page-header:last-child{
+    margin-right: 0px;
+}
+.page-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.page-header a:before,
+.nav-toggle ul li a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(24, 253, 146);
+    transition: all ease 0.5s;
+    z-index: -1;
+}
+
+.page-header a:hover:before,
+.nav-toggle ul li a:hover:before{
+    width: 100%;
+}
+
+.nav-toggle{
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: white;
+    margin-left: 100px;
+    z-index: 8;
+    overflow-y: auto;
+    transition: all ease 0.5s;
+} 
+
+.nav-toggle ul li{
+    list-style: none;
+    display: block;
+}
+
+.nav-toggle ul li a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 30px 100px;
+}
+.nav-toggle.open{
+    left: 0;
 }
 
 @media only screen and (max-width: 600px){
@@ -72,5 +143,6 @@ header{
 
     .social{
         left: -130px;
+        top: 350px;
     }
 }
