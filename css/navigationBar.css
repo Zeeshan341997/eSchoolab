@@ -64,6 +64,33 @@
     color: white;
 }
 
+#blur.formActive{
+    filter: blur(13px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#formPopup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#formPopup.formActive{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
 header{
     width: calc(100% - 100px);
     margin-left: 100px;

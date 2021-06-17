@@ -67,3 +67,10 @@ $(document).ready(function(){
         delay: 8000,
     });
 });
+
+function loginForm(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('formActive');
+    var formPopup = document.getElementById('formPopup');
+    formPopup.classList.toggle('formActive');
+}
