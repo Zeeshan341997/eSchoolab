@@ -5,9 +5,10 @@
     width: 100px;
     height: 100%;
     z-index: 9;
-    background-color: white;
-    border-right: 1px solid gray;
+    background-color:rgb(214, 214, 214);
+    /* border-right: 1px solid gray; */
     padding: 50px 40px;
+    box-shadow: 4px 0 9px -3px rgb(163, 163, 163);
 }
 
 .toggle{
@@ -58,19 +59,26 @@
     height: 40px;
 }
 
-.login-btn img{
-    height: 30px;
-    width: 30px;
-    color: white;
+.login-btn i{
+    font-size: xx-large;
+    color: red;
+}
+
+.login-btn i:hover{
+    color: green;
+    text-shadow: 1px 2px 20px rgb(0, 247, 0);
+    text-shadow: 1px 3px 25px rgb(0, 247, 0);
+    text-shadow: 1px 4px 30px rgb(0, 247, 0);
+
 }
 
 #blur.formActive{
-    filter: blur(13px);
+    filter: blur(6px);
     pointer-events: none;
     user-select: none;
 }
 
-#formPopup{
+.form-container{
     position: fixed;
     top: 40%;
     left: 50%;
@@ -147,21 +155,23 @@ nav{
     height: 100%;
     background-color: white;
     margin-left: 100px;
-    z-index: 8;
+    z-index: 999;
     overflow-y: auto;
     transition: all ease 0.5s;
 } 
 
 .nav-toggle ul li{
+    text-align: center;
     list-style: none;
     display: block;
+    margin-top: 1%;
 }
 
 .nav-toggle ul li a{
     text-decoration: none;
     position: relative;
     display: inline-block;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 700;
     color: black;
     text-transform: uppercase;
