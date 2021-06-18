@@ -82,7 +82,7 @@
 
 }
 
-/* sign in and sign up button */
+/* sign in and sign up form */
 
 #blur.formActive{
     filter: blur(6px);
@@ -103,6 +103,16 @@
     z-index: 1;
 }
 
+.signin-signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #formPopup.formActive{
     top: 50%;
     visibility: visible;
@@ -115,6 +125,19 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+form.signin-form{
+    z-index: 2;
+}
+
+form.signup-form{
+    z-index: 1;
+    opacity: 0;
 }
 
 .tittle{
@@ -164,7 +187,7 @@ form{
     outline: none;
     border-radius: 49px;
     cursor: pointer;
-    background-color: #ffe600d3;
+    background-color: #ffe100;
     color: white;
     text-transform: uppercase;
     font-weight: 600;
