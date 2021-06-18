@@ -1,3 +1,5 @@
+/* left Sidebar */
+
 .left-sidebar{
     position: fixed;
     top: 0%;
@@ -10,6 +12,8 @@
     padding: 50px 40px;
     box-shadow: 4px 0 9px -3px rgb(163, 163, 163);
 }
+
+/* menu button */
 
 .toggle{
     display: block;
@@ -24,6 +28,8 @@
     display: block;
     margin: 0 0 4px;
 }
+
+/* social links */
 
 .social{
     position: absolute;
@@ -44,6 +50,8 @@
     margin: 0 15px;
 }
 
+/* Logo */
+
 .logo{
     display: flex;
     width: 100px;
@@ -59,6 +67,8 @@
     height: 40px;
 }
 
+/* Login button */
+
 .login-btn i{
     font-size: xx-large;
     color: red;
@@ -72,6 +82,8 @@
 
 }
 
+/* sign in and sign up button */
+
 #blur.formActive{
     filter: blur(6px);
     pointer-events: none;
@@ -84,8 +96,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    padding: 50px;
-    background-color: #fff;
+    background-color: white;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -97,6 +108,101 @@
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tittle{
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(224, 224, 224, 0.877);
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+}
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.input-field input:placeholder{
+    color: #acacac;
+    font-weight: 500;
+}
+
+.btn{
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #ffe600d3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition:  0.5s;
+}
+
+.btn:hover{
+    background-color: rgb(240, 216, 0);
+}
+
+.social-text{
+    padding: .7rem 0;
+    font-size: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solide rgb(0, 0, 0);
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+}
+
+.social-icon:hover{
+    background-color: rgb(240, 216, 0);
+    color: black;
 }
 
 header{
@@ -112,6 +218,8 @@ nav{
     background-color: black;
     color: white;
 }
+
+/* page heading */
 
 .page-header{
     list-style-type: none;
@@ -147,6 +255,8 @@ nav{
     
 }
 
+/* navigation bar links */
+
 .nav-toggle{
     position: fixed;
     top: 0%;
@@ -180,6 +290,10 @@ nav{
 .nav-toggle.open{
     left: 0;
 }
+
+
+
+/* responsive style */
 
 @media only screen and (max-width: 768px){
     .left-sidebar{
