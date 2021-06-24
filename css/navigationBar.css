@@ -87,7 +87,7 @@
 #blur.formActive{
     filter: blur(5px);
     opacity: .5;
-    /* pointer-events: none; */
+    pointer-events: none;
     user-select: none;
 }
 
@@ -101,17 +101,17 @@
     transition: 0.5s;
 }
 
-.formClose img{
-    width: 20px;
-    height: 20px;
+a.form-close img{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    z-index: 9;
+    margin: 5%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
-.formClose{
-    display: block;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    z-index: 99;
-}
+
 
 .main-container{
     position: absolute;
@@ -135,7 +135,7 @@
     top: -15%;
     right: 50%;
     transform: translateY(-40%);
-    z-index: 8;
+    z-index: 9;
     transition: 1.8s ease-in-out;
 }
 
