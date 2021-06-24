@@ -141,7 +141,7 @@ a.form-close img{
 
 .main-container.sign-up-mode:before{
     transform: translate(95%, -40%);
-    right: 42%;
+    right: 40%;
 }
 
 .form-container{
@@ -462,10 +462,10 @@ nav{
 
 /* responsive style */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 990px){
     .left-sidebar{
         position: absolute;
-        padding: 10px 20px;
+        padding: 15px;
         height: 100%;
         top: 0%;
         left: 0%;
@@ -484,7 +484,7 @@ nav{
     }
 
     .nav-toggle{
-        padding-top: 40px;
+        padding-top: 30px;
         width: calc(100% - 50px);
         margin-left: 50px;
 
