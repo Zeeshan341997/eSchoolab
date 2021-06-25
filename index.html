@@ -36,8 +36,6 @@
     <div class="main-container" id="formPopup">
         <a href="#" onclick="loginForm()" class="form-close"><img src="images/close.png"></a>
         <div class="form-container">
-            <a href="#" onclick="loginForm()" class="form-close"><img src="images/close.png"></a>
-
             <div class="signin-signup">
                 <form action="" class="signin-form">
                     <h2 class="tittle">Sign in</h2>
@@ -158,4 +156,41 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/lettering.js"></script>
 <script src="js/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+    function loginForm(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('formActive');
+    var formPopup = document.getElementById('formPopup');
+    formPopup.classList.toggle('formActive');
+    }
+
+if (annyang) {
+    var commands = {
+        'open login form': function() {
+        var blur = document.getElementById('blur');
+        blur.classList.add('formActive');
+        var formPopup = document.getElementById('formPopup');
+        formPopup.classList.add('formActive');
+    }   
+}
+
+var command = {
+    'close login form': function() {
+    var blur = document.getElementById('blur');
+    blur.classList.remove('formActive');
+    var formPopup = document.getElementById('formPopup');
+    formPopup.classList.remove('formActive');
+    }   
+}
+  
+// Add our commands to annyang
+annyang.addCommands(commands);
+annyang.addCommands(command);
+
+
+// Start listening. You can call this here, or attach this call to an event, button, etc.
+annyang.start();
+}
+</script>
 </html>

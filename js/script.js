@@ -80,10 +80,5 @@ $(document).ready(function(){
     });
 });
 
-function loginForm(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('formActive');
-    var formPopup = document.getElementById('formPopup');
-    formPopup.classList.toggle('formActive');
-}
+
 
