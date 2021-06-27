@@ -195,21 +195,16 @@ formPopup.classList.remove('formActive');
 
 
 'sign up': function(){
-const signUpBtn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".main-container");
 
-    signUpBtn.addEventListener('click', () => {
     container.classList.add("sign-up-mode");
-});
 },
 'sign in':function(){
 
-    const signInBtn = document.querySelector("#sign-in-btn");
     const container = document.querySelector(".main-container");
 
-    signInBtn.addEventListener('click', () => {
     container.classList.remove("sign-up-mode");
-});
+
 }       
 }
   
@@ -221,4 +216,5 @@ annyang.addCommands(formCommand);
 annyang.start();
 }
 </script>
+
 </html>
