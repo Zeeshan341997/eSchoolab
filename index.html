@@ -41,13 +41,13 @@
                     <h2 class="tittle">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="User Name">
+                        <input type="text" id="uname" placeholder="User Name">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="pass" placeholder="Password">
                     </div>
-                    <input type="submit" value="Login" class="btn solid">
+                    <input type="submit" value="Login" id="submit" class="btn solid">
     
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
@@ -129,6 +129,8 @@
             <div class="login-btn">
                 <a href="#" onclick="loginForm()"><i class="fas fa-power-off"></i></a>
             </div>
+            <!-- <button onclick="annyang.start()">start</button>
+            <button onclick="annyang.abort()">stop</button> -->
 
         </nav>
 
@@ -203,7 +205,23 @@ formPopup.classList.remove('formActive');
 
     const container = document.querySelector(".main-container");
     container.classList.remove("sign-up-mode");
-}      
+},
+
+'write username *tag': function(variable){
+    let uname = document.getElementById("uname");
+    uname.value = variable;
+},
+
+'write password *tag': function(variable){
+    let password = document.getElementById("pass");
+    password.value = variable;
+},
+
+'login *tag': function(variable){
+    let submit = document.getElementById("submit");
+    submit.login = click();
+}
+
 }
   
 // Add our commands to annyang
@@ -211,7 +229,9 @@ annyang.addCommands(formCommand);
 
 
 // Start listening. You can call this here, or attach this call to an event, button, etc.
+
 annyang.start();
+
 }
 </script>
 
