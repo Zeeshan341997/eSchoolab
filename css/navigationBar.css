@@ -27,6 +27,26 @@
   background-color: black;
   display: block;
   margin: 0 0 4px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.toggle.close span {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toggle img {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toggle.close img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* social links */
