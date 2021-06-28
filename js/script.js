@@ -10,11 +10,18 @@ $(document).ready(function(){
                 rotate: [0, 45],
                 delay:500
             });
+            
         }else{
             anime({
                 targets: '.toggle span',
                 duration: 1500,
-                rotate: [45, 0],
+                rotate: [65, 0],
+                delay:500
+            });
+            anime({
+                targets: '.toggle span .s1',
+                duration: 1500,
+                rotate: [0, 65],
                 delay:500
             });
         }
