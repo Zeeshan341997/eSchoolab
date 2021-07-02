@@ -4,12 +4,13 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  width: 100px;
+  width: 80px;
   height: 100%;
   z-index: 999;
-  background-color: rgb(214, 214, 214);
+  background-color: white;
+  /* background-color: rgb(214, 214, 214); */
   /* border-right: 1px solid gray; */
-  padding: 50px 40px;
+  padding: 40px 30px;
   box-shadow: 4px 0 9px -3px rgb(163, 163, 163);
 }
 
@@ -55,7 +56,7 @@
   position: absolute;
   transform: rotate(-90deg);
   display: flex;
-  left: -120px;
+  left: -130px;
   bottom: 160px;
   width: 360px;
   height: 100px;
@@ -82,10 +83,10 @@
   line-height: 50px;
   align-items: center;
 }
-.logo img {
+/* .logo img {
   width: 40px;
   height: 40px;
-}
+} */
 
 /* Login button */
 
@@ -391,22 +392,27 @@ form.signup-form {
 }
 
 header {
-  width: calc(100% - 100px);
-  margin-left: 100px;
+  position: relative;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 
 nav {
-  align-items: center;
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-  background-color: black;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
   color: white;
+  z-index: 99;
 }
 
 /* page heading */
 
 .page-header {
+  position: relative;
   list-style-type: none;
   display: inline-block;
 }
@@ -416,10 +422,9 @@ nav {
 }
 .page-header a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: 500;
-  position: relative;
   z-index: 9;
 }
 
