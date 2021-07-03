@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Tools</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navigationBar.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- left navbar -->
+    <div class="left-sidebar">
+        <div class="toggle">
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+            <img src="../images/close.png">
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <div class="nav-toggle">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="practicals.html">Practicals</a></li>
+            <li><a href="glosary.html">Glosary</a></li>
+            <li><a href="labTools.html">Lab Tools</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container" id="formPopup">
+        <a href="#" onclick="loginForm()" class="form-close"><img src="../images/close.png"></a>
+        <div class="form-container">
+            <div class="signin-signup">
+                <form action="" class="signin-form">
+                    <h2 class="tittle">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="uname" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="pass" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" id="submit" class="btn solid">
+    
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="" class="signup-form">
+                    <h2 class="tittle">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="sign up" class="btn solid">
+    
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btnF transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us??</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btnF transparent" id="sign-in-btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="blur">
+        <nav>
+            <!-- logo -->
+            <a href="../index.html" class="logo">eSchooLab</a>
+
+            <!-- page heading -->
+            <div class="page-header"><a href="../index.html">Lab Tools</a></div>
+
+            <!-- login button -->
+            <div class="login-btn">
+                <a href="#" onclick="loginForm()"><i class="fas fa-power-off"></i></a>
+            </div>
+            <!-- <button onclick="annyang.start()">start</button>
+            <button onclick="annyang.abort()">stop</button> -->
+
+        </nav>
+
+        
+    </header>
+
+    <section>
+        <div class="container">
+            
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="../js/anime.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/lettering.js"></script>
+<script src="../js/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+const signInBtn = document.querySelector("#sign-in-btn");
+const signUpBtn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".main-container");
+
+signUpBtn.addEventListener('click', () => {
+    container.classList.add("sign-up-mode");
+});
+
+signInBtn.addEventListener('click', () => {
+    container.classList.remove("sign-up-mode");
+});
+
+function loginForm(){
+var blur = document.getElementById('blur');
+blur.classList.toggle('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.toggle('formActive');
+}
+
+if (annyang) {
+var formCommand = {
+'open login form': function() {
+var blur = document.getElementById('blur');
+blur.classList.add('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.add('formActive');
+},
+
+'close login form': function() {
+var blur = document.getElementById('blur');
+blur.classList.remove('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.remove('formActive');
+},
+
+
+'sign up': function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.add("sign-up-mode");
+},
+'sign in':function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.remove("sign-up-mode");
+},
+
+'write username *tag': function(variable){
+    let uname = document.getElementById("uname");
+    uname.value = variable;
+},
+
+'write password *tag': function(variable){
+    let password = document.getElementById("pass");
+    password.value = variable;
+},
+
+'login *tag': function(variable){
+    let submit = document.getElementById("submit");
+    submit.login = click();
+}
+
+}
+  
+// Add our commands to annyang
+annyang.addCommands(formCommand);
+
+
+// Start listening. You can call this here, or attach this call to an event, button, etc.
+
+annyang.start();
+
+}
+</script>
+
+</html>
