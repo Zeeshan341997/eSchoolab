@@ -136,11 +136,11 @@
         </nav>
 
         <div class="home-section">
-            <div class="container">
-                <div class="welcomeImg">
+            <div class="home-container">
+                <!-- <div class="welcomeImg">
                     <span class="welcomeOverlay"></span>
                     <img src="images/slider4.jpg" alt="Welcome">
-                </div>
+                </div> -->
                 <div class="welcomeText">
                     <h1 class="welcomeScreen">Welcome</h1>
                     <h6 class="welcomeintro">To eSchooLab!</h6>
@@ -158,6 +158,7 @@
     <footer>
 
     </footer>
+    <audio src="audio/orignal zeegota.wav" id="helloZeegota">audio</audio>
 </body>
 <script src="js/anime.min.js"></script>
 <script src="js/jquery.min.js"></script>
@@ -225,6 +226,10 @@ formPopup.classList.remove('formActive');
 'login *tag': function(variable){
     let submit = document.getElementById("submit");
     submit.login = click();
+},
+
+'hello': function(){
+    document.getElementById("helloZeegota").play();
 }
 
 }

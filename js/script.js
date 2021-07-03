@@ -53,22 +53,22 @@ $(document).ready(function(){
         easing: 'easeInSine',
         delay: anime.stagger(100, {start:4500})
     });
-    anime({
-        targets: '.welcomeScreen span.char4, .welcomeScreen span.char6',
-        keyframes:[
-            {translateY: 100, duration: 1500}
-        ],
-        easing: 'easeInOutExpo',
-        delay: 8000,
-    });
-    anime({
-        targets: '.welcomeScreen span.char2, .welcomeScreen span.char3, .welcomeScreen span.char5',
-        keyframes:[
-            {translateY: -100, duration: 1500}
-        ],
-        easing: 'easeInOutExpo',
-        delay: 8000,
-    });
+    // anime({
+    //     targets: '.welcomeScreen span.char4, .welcomeScreen span.char6',
+    //     keyframes:[
+    //         {translateY: 100, duration: 1500}
+    //     ],
+    //     easing: 'easeInOutExpo',
+    //     delay: 8000,
+    // });
+    // anime({
+    //     targets: '.welcomeScreen span.char2, .welcomeScreen span.char3, .welcomeScreen span.char5',
+    //     keyframes:[
+    //         {translateY: -100, duration: 1500}
+    //     ],
+    //     easing: 'easeInOutExpo',
+    //     delay: 8000,
+    // });
 });
 
 
