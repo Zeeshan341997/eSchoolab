@@ -17,7 +17,8 @@ body {
   background: url("../images/header-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  filter: grayscale(0.5);
+  filter: grayscale(0.8);
+  filter: brightness(0.8);
 }
 .welcomeImg {
   position: relative;

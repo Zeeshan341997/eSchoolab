@@ -17,8 +17,9 @@
 /* menu button */
 
 .toggle {
+  position: relative;
   display: block;
-  width: 25px;
+  width: 30px;
   cursor: pointer;
 }
 
@@ -43,11 +44,13 @@
 }
 
 .toggle.close img {
-  display: block;
+  position: relative;
+  display: flex;
   width: 25px;
   height: 25px;
   visibility: visible;
   opacity: 1;
+  margin-top: -60%;
 }
 
 /* social links */
@@ -77,7 +80,7 @@
   display: flex;
   width: 100px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: 700;
   line-height: 50px;
@@ -90,16 +93,18 @@
 
 /* Login button */
 
-.login-btn i {
-  font-size: xx-large;
-  color: red;
+.login-btn a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 
-.login-btn i:hover {
-  color: rgb(0, 247, 0);
-  text-shadow: 1px 2px 20px rgb(0, 247, 0);
-  text-shadow: 1px 3px 25px rgb(0, 247, 0);
-  text-shadow: 1px 4px 30px rgb(0, 247, 0);
+.login-btn a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
 }
 
 /* sign in and sign up form */
@@ -405,7 +410,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 5px;
-  color: white;
+  background-color: white;
+  color: black;
   z-index: 99;
 }
 
