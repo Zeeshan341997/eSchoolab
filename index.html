@@ -149,6 +149,8 @@
             </div>
         </div>
     </header>
+    <div class="audio"><audio src="audio/orignal zeegota.wav" id="helloZeegota" controls>audio</audio>
+    </div>
 
     <section>
         <div class="container">
@@ -158,13 +160,13 @@
     <footer>
 
     </footer>
-    <audio src="audio/orignal zeegota.wav" id="helloZeegota">audio</audio>
+    
 </body>
 <script src="js/anime.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/lettering.js"></script>
 <script src="js/script.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script src="js/annyang.min.js"></script>
 <script>
 const signInBtn = document.querySelector("#sign-in-btn");
 const signUpBtn = document.querySelector("#sign-up-btn");
@@ -211,6 +213,27 @@ formPopup.classList.remove('formActive');
 
     const container = document.querySelector(".main-container");
     container.classList.remove("sign-up-mode");
+},
+
+'open practical page':function(){
+    window.open('/htmlpages/practicals.html');
+
+},
+'open lab tool page':function(){
+    window.open('/htmlpages/labTools.html');
+
+},
+'open glosary page':function(){
+    window.open('/htmlpages/glosary.html');
+
+},
+'open about page':function(){
+    window.open('/htmlpages/about.html');
+
+},
+
+'close page':function(){
+    window.close('index.html');
 },
 
 'write username *tag': function(variable){
