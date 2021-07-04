@@ -32,13 +32,13 @@ $(document).ready(function(){
         duration: 1500,
         easing: 'easeInSine'
     });
-    anime({
-        targets: '.home-section .welcomeImg img',
-        opacity: 1,
-        delay:1500,
-        duration: 1500,
-        easing: 'easeInSine'
-    });
+    // anime({
+    //     targets: '.home-section .welcomeImg img',
+    //     opacity: 1,
+    //     delay:1500,
+    //     duration: 1500,
+    //     easing: 'easeInSine'
+    // });
     anime({
         targets: '.welcomeintro',
         opacity: 1,
