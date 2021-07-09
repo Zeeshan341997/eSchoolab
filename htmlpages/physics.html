@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/fav-ico.png">
+        <title>Physics</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navigationBar.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    </head>
+<body>
+    <!-- left navbar -->
+    <div class="left-sidebar">
+        <div class="toggle">
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <div class="nav-toggle">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Practicals</a></li>
+            <li><a href="#">Glosary</a></li>
+            <li><a href="#">Lab Tools</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container" id="formPopup">
+        <a href="#" onclick="loginForm()" class="form-close"><img src="images/close.png"></a>
+        <div class="form-container">
+            <div class="signin-signup">
+                <form action="" class="signin-form">
+                    <h2 class="tittle">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="uname" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="pass" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" id="submit" class="btn solid">
+    
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="" class="signup-form">
+                    <h2 class="tittle">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="sign up" class="btn solid">
+    
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btnF transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us??</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btnF transparent" id="sign-in-btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="blur">
+        <nav>
+            <!-- logo -->
+            <a href="" class="logo"><img src="../images/logo2.png" alt="">eSchooLab<img src="../images/logo.png" alt=""></a>
+
+            <!-- page heading -->
+            <div class="page-header"><a href="../index.html">Physics</a></div>
+
+            <!-- login button -->
+            <div class="login-btn">
+                <a href="#" onclick="loginForm()"><i class="fas fa-power-off"></i></a>
+            </div>
+            <!-- <button onclick="annyang.start()">start</button>
+            <button onclick="annyang.abort()">stop</button> -->
+        </nav>
+
+        <div class="container-fluid p-5">
+            <div class="bg p-5">
+                <div class="">
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(188, 189, 147), rgb(151, 76, 76));  transform: skewX(45deg); box-shadow: 100px -50px 100px rgba(255, 255, 255, 0.5);">
+                        </div>
+                        <div style="color: rgb(14, 14, 107); margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 1a</h5>
+                        <h3>Relation Between Volume And Height</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 1b</h5>
+                        <h3>Hooke's Law</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 2</h5>
+                        <h3>Vernier Callipers</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 3a</h5>
+                        <h3>Screw Guage</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 3b</h5>
+                        <h3>Diameter Of Wire</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 4</h5>
+                        <h3>Principle Of Moments</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 5</h5>
+                        <h3>Vector Addition</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 6</h5>
+                        <h3>Simple Pendulum</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 7</h5>
+                        <h3>Archimede's Principle</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 8</h5>
+                        <h3>Verification Of OHM's Law</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 9</h5>
+                        <h3>Convex Lens</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 10a</h5>
+                        <h3>Magnetic Lines</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 10b</h5>
+                        <h3>Center Of Gravity (Alternate)</h3>
+                        </div>
+                    </div>
+    
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 11</h5>
+                        <h3>Laws Of Reflection</h3>
+                        </div>
+                    </div>
+
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 12</h5>
+                        <h3>Concave Mirror</h3>
+                        </div>
+                    </div>
+
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 13</h5>
+                        <h3>Refractive Index</h3>
+                        </div>
+                    </div>
+
+                    <div class="container-md pracDes mt-5 shadow">
+                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                        </div>
+                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                        <h5>Practical 14</h5>
+                        <h3>Prism</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        
+
+    </section>
+
+</body>
+<script src="../js/anime.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/lettering.js"></script>
+<script src="../js/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+const signInBtn = document.querySelector("#sign-in-btn");
+const signUpBtn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".main-container");
+
+signUpBtn.addEventListener('click', () => {
+    container.classList.add("sign-up-mode");
+});
+
+signInBtn.addEventListener('click', () => {
+    container.classList.remove("sign-up-mode");
+});
+
+function loginForm(){
+var blur = document.getElementById('blur');
+blur.classList.toggle('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.toggle('formActive');
+}
+
+if (annyang) {
+var formCommand = {
+'kholo': function() {
+var blur = document.getElementById('blur');
+blur.classList.add('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.add('formActive');
+},
+
+'close login form': function() {
+var blur = document.getElementById('blur');
+blur.classList.remove('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.remove('formActive');
+},
+
+
+'sign up': function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.add("sign-up-mode");
+},
+'sign in':function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.remove("sign-up-mode");
+},
+
+'write username *tag': function(variable){
+    let uname = document.getElementById("uname");
+    uname.value = variable;
+},
+
+'write password *tag': function(variable){
+    let password = document.getElementById("pass");
+    password.value = variable;
+},
+
+'login *tag': function(variable){
+    let submit = document.getElementById("submit");
+    submit.login = click();
+}
+
+}
+  
+// Add our commands to annyang
+annyang.addCommands(formCommand);
+
+
+// Start listening. You can call this here, or attach this call to an event, button, etc.
+
+annyang.start();
+
+}
+</script>
+
+</html>
