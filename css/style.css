@@ -54,97 +54,18 @@ body {
   transition: 0s;
 }
 
-.home-container {
-  position: relative;
-  width: 100%;
-  height: 900px;
-  margin: 0 auto;
-  /* background: linear-gradient(
-    135deg,
-    rgba(26, 188, 156, 1) 0%,
-    rgba(142, 68, 173, 1) 100%
-  ); */
-}
-/* .welcomeImg {
-  position: relative;
-  float: right;
-  margin: 10% 10%;
-  border-radius: 70px 0 70px 0;
-  overflow: hidden;
-}
-
-.welcomeImg img {
-  filter: brightness(0.5);
-  height: 500px;
-  width: 650px;
-}
-
-.welcomeImg img, */
-.welcomeScreen {
-  opacity: 0;
-}
-
-/* .welcomeOverlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-  z-index: 99;
-} */
-
-.welcomeText {
-  position: absolute;
-  color: rgb(68, 187, 255);
-  margin-top: 15%;
-  margin-left: 5%;
-}
-
-.welcomeScreen {
-  text-transform: uppercase;
-  font-size: 100px;
-}
-.welcomeintro {
-  letter-spacing: 12px;
-  font-size: 36px;
-  opacity: 0;
-}
-
-.welcomeBtn {
-  margin-top: 210px;
-}
-
-.welcomeBtn a {
-  text-decoration: none;
-  padding: 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-}
-.welcomeBtn a:hover {
-  background-color: black;
-  color: white;
-}
-
-.welcomeScreen span {
-  margin-right: 100px;
-  display: inline-block;
-}
-
-.welcomeScreen span:last-child {
-  margin-right: 0;
-}
-
 /* Practicals section */
 
-.bio {
+.practicals {
   position: relative;
-  padding: 110px 0 0;
+  padding: 170px 0;
+}
+
+.biology {
+  background: url(../images/biology-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .left-sec {
@@ -159,4 +80,18 @@ body {
 }
 
 .right-sec {
+  padding: 5px 45px 5px 0;
+}
+
+.right-sec p {
+  color: #525252;
+  margin-bottom: 15px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.right-sec h2 {
+  font-family: "Merienda", cursive;
+  font-size: 100px;
+  font-weight: 700;
 }
