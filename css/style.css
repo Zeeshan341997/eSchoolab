@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+/* font-family: 'Merienda', cursive; */
+
 * {
   margin: 0%;
   padding: 0%;
@@ -139,6 +142,21 @@ body {
 
 /* Practicals section */
 
-#practicals .container {
-  height: 600px;
+.bio {
+  position: relative;
+  padding: 110px 0 0;
+}
+
+.left-sec {
+  padding: 5px 0 5px 45px;
+  margin: 0 0 0 30px;
+}
+
+.left-sec img {
+  width: 100%;
+  /* box-shadow: 0 3px 9px gray;
+  border-radius: 25px; */
+}
+
+.right-sec {
 }
