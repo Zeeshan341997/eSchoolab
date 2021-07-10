@@ -144,9 +144,6 @@ body {
 
 .bio {
   position: relative;
-  background: url(../images/sec1-bg.jpeg) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 110px 0 0;
 }
 

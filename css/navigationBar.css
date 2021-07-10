@@ -90,8 +90,8 @@
   align-items: center;
 }
 /* .logo img {
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 100px;
 } */
 
 /* Login button */
@@ -253,18 +253,17 @@ form.signup-form {
 }
 
 .btnM {
-  width: 150px;
-  height: 49px;
-  border: none;
+  border: 2px solid #2672ff;
   outline: none;
   border-radius: 49px;
   cursor: pointer;
   background-color: #2672ff;
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   margin: 10px 0;
   transition: 0.5s;
+  padding: 10px 20px;
 }
 
 .btnM:hover {
