@@ -58,7 +58,11 @@ body {
 
 .practicals {
   position: relative;
-  padding: 170px 0;
+  padding: 100px 0;
+}
+
+.row {
+  align-items: center;
 }
 
 .biology {
@@ -79,10 +83,109 @@ body {
   background-attachment: fixed;
   overflow: hidden;
 }
+/* .slider-content.bg-b .biology {
+  opacity: 1;
+  visibility: visible;
+}
+.slider-content.bg-b .physics,
+.chemistry {
+  opacity: 0;
+  visibility: 0;
+} */
+/* .bg-p .biology,
+.chemistry {
+  opacity: 0;
+  visibility: 0;
+}
+.bg-c .physics,
+.biology {
+  opacity: 0;
+  visibility: 0;
+} */
+
+.slick-slide {
+  outline: none;
+}
+.slick-prev,
+.slick-next {
+  top: 110%;
+}
+.slider {
+  margin: 30px auto 35px;
+}
+.slider-content {
+  padding: 30px 0 0 30px;
+}
+.slick-next {
+  right: 22%;
+}
+.slick-prev {
+  left: unset;
+  right: 28%;
+}
+.slick-next.slick-disabled {
+  opacity: 1 !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1;
+}
+.slick-prev:before {
+  content: "";
+  background: url(../images/prev.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.slick-next:before {
+  content: "";
+  background: url(../images/next.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 1;
+}
+
+.progress {
+  display: block;
+  width: 80%;
+  height: 4px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, #2672ff, #2672ff);
+  background-repeat: no-repeat;
+  background-size: 0% 80%;
+  transition: background-size 0.4s ease-in-out;
+}
+.progress-bar-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 0 0 30px;
+}
+span.count-left {
+  color: black;
+  margin-right: 10px;
+}
+span.count-right {
+  color: black;
+  margin-left: 10px;
+}
 
 .left-sec {
   padding: 5px 0 5px 45px;
-  margin: 0 0 0 30px;
 }
 
 .left-sec img {
@@ -92,11 +195,11 @@ body {
 }
 
 .right-sec {
-  padding: 5px 45px 5px 0;
+  padding: 5px 25px 5px 25px;
 }
 
 .right-sec p {
-  color: #525252;
+  color: white;
   margin-bottom: 15px;
   font-weight: 400;
   text-align: justify;
@@ -109,6 +212,7 @@ body {
   margin-bottom: 25px;
   padding-bottom: 30px;
   position: relative;
+  color: white;
 }
 
 .right-sec h2::after {

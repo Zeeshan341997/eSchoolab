@@ -1,3 +1,5 @@
+// Side Menu Bar
+
 $(document).ready(function(){
     $(".toggle").on('click', function(){
         $(this).toggleClass("close");
@@ -21,6 +23,26 @@ $(document).ready(function(){
         }
     });
 
+// Practicals Carousel
+
+    var $slider = $('.slider');
+    var $progressBar = $('.progress');
+    $progressBar.css('background-size','30% 100%')
+    $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+      var calc = ( (nextSlide) / (slick.slideCount+-1) ) * 100;
+      $progressBar
+        .css('background-size', calc + '% 100%')
+    });
+    
+    $slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 400,
+      infinite: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+    });
     
 
     $(".welcomeScreen, .welcomeintro").lettering();
