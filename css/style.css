@@ -22,20 +22,22 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 100%, 0 85%);
 }
 
-.home-section .row {
+.home-section .icons-box {
   position: relative;
   width: 100%;
   display: flex;
-  padding: 0 20px;
   white-space: nowrap;
   font-size: 55px;
-  transform: rotate(-30deg);
   justify-content: center;
+  left: -10%;
+  top: 0%;
+  transform: rotate(-30deg);
   text-align: center;
-  margin-top: 60px;
   line-height: 2;
+  overflow-wrap: normal;
 }
 
 .home-section i {
@@ -58,11 +60,19 @@ body {
 
 .practicals {
   position: relative;
-  padding: 100px 0;
+  padding: 5% 0 20%;
   background: url(../images/sec1-bg.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
+  clip-path: polygon(60% 15%, 100% 0, 100% 80%, 0 100%, 0 0);
+  margin: -25% 0 0;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.practicals:hover {
+  filter: none;
+  transition: 0.5s;
 }
 
 .row {
@@ -137,17 +147,25 @@ body {
 .progress-bar-main {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  margin: 0 0 0 30px;
+  justify-content: end;
+  width: 40%;
+  margin: 0 0 0 0px;
+  position: absolute;
+  right: 0;
 }
 span.count-left {
-  color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
   margin-right: 10px;
+  text-shadow: 2px 3px 3px black;
 }
 span.count-right {
-  color: black;
+  color: white;
   margin-left: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  text-shadow: 2px 3px 3px black;
 }
 
 .left-sec {
@@ -157,6 +175,7 @@ span.count-right {
 .left-sec img {
   width: 600px;
   height: 600px;
+  filter: drop-shadow(0 3px 9px black);
   /* box-shadow: 0 3px 9px gray;
   border-radius: 25px; */
 }
@@ -180,6 +199,7 @@ span.count-right {
   padding-bottom: 30px;
   position: relative;
   color: white;
+  text-shadow: 3px 6px 12px black;
 }
 
 .right-sec h2::after {
@@ -193,6 +213,7 @@ span.count-right {
   left: -25px;
   bottom: 0;
 }
+
 @keyframes spin {
   25% {
     transform: rotate3d();
