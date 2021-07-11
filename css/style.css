@@ -67,7 +67,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.wel-head,.welcomeHead{
+  opacity: 0;
+}
 .welcomebox h1 {
   font-family: "Merienda", cursive;
   font-weight: 900;
