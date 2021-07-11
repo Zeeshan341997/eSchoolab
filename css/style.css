@@ -162,7 +162,7 @@ span.count-right {
 }
 
 .right-sec {
-  padding: 5px 25px 5px 25px;
+  padding: 5px 25px 5px 15px;
 }
 
 .right-sec p {
@@ -192,4 +192,9 @@ span.count-right {
   position: absolute;
   left: -25px;
   bottom: 0;
+}
+@keyframes spin {
+  25% {
+    transform: rotate3d();
+  }
 }
