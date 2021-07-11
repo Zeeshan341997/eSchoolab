@@ -59,49 +59,15 @@ body {
 .practicals {
   position: relative;
   padding: 100px 0;
+  background: url(../images/sec1-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .row {
   align-items: center;
 }
-
-.biology {
-  background: url(../images/biology-bg.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-.physics {
-  background: url(../images/physics-bg.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-.chemistry {
-  background: url(../images/chemisty\ bg.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-/* .slider-content.bg-b .biology {
-  opacity: 1;
-  visibility: visible;
-}
-.slider-content.bg-b .physics,
-.chemistry {
-  opacity: 0;
-  visibility: 0;
-} */
-/* .bg-p .biology,
-.chemistry {
-  opacity: 0;
-  visibility: 0;
-}
-.bg-c .physics,
-.biology {
-  opacity: 0;
-  visibility: 0;
-} */
 
 .slick-slide {
   outline: none;
@@ -189,7 +155,8 @@ span.count-right {
 }
 
 .left-sec img {
-  width: 100%;
+  width: 600px;
+  height: 600px;
   /* box-shadow: 0 3px 9px gray;
   border-radius: 25px; */
 }
