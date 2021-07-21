@@ -23,6 +23,14 @@ $(document).ready(function(){
         }
     });
 
+// Scroll Indicator
+
+$(".scroll-down-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".practicals").offset().top
+    }, 1000);
+});
+
 // Practicals Carousel
 
     var $slider = $('.slider');
