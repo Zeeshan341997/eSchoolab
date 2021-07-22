@@ -25,12 +25,16 @@ $(document).ready(function(){
 
 // Scroll Indicator
 
-$(".scroll-down-btn").click(function() {
+$(".indicator1").click(function() {
     $('html, body').animate({
         scrollTop: $(".practicals").offset().top
     }, 1000);
 });
-
+$(".indicator2").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".glossary").offset().top
+    }, 1000);
+});
 // Practicals Carousel
 
     var $slider = $('.slider');
