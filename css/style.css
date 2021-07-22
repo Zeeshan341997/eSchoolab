@@ -279,6 +279,35 @@ body {
   transform: translate(0px, -5%);
 }
 
+/* Lab Tools Section */
+
+.labtools{
+  position: relative;
+  background: url(../images/lab-bg.jfif) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
+  padding: 10% 0 16%;
+  margin: -17% 0 0;
+  height: 100vh;
+}
+
+.demo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  transform: rotate3d();
+}
+
 /* Scroll Indicator */
 
 @keyframes scrollIndicatorDown {
