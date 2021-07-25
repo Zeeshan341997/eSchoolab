@@ -308,6 +308,15 @@ body {
   transform: rotate3d();
 }
 
+/* Footer */
+
+footer{
+  position: relative;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  background: rgba(0, 0, 0, 0.801);
+  height: 100vh;
+}
+
 /* Scroll Indicator */
 
 @keyframes scrollIndicatorDown {
