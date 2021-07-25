@@ -290,31 +290,123 @@ body {
   padding: 10% 0 16%;
   margin: -17% 0 0;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
 }
 
-.demo{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-color: red;
+.right-sec{
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.right-sec h2{
+  font-family: 'Merienda', cursive;
+  font-size: 70px;
   color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.right-sec p{
+  font-size: 25px;
+  margin: 20px 0;
+  text-align: justify;
+  color: white;
+}
+
+.atom-box{
+  position: relative;
+  left: 18%;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  transform: rotate3d();
+}
+
+.apple{
+  width: 90px;
+  height: 90px;
+}
+
+.atom-1 {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  background-color: transparent;
+  transform: rotateZ(0deg) rotateY(-73deg);
+  border: 10px dotted black;
+  animation: spin 5s linear infinite;
+}
+
+
+/* .atom-1:before{
+	content:"";
+  width:22px;
+  height:22px;
+  border-radius:50px;
+  background:black;
+  position:absolute;
+}
+.atom-2:before{
+  content:"";
+  width:22px;
+  height:22px;
+  border-radius:50px;
+  background:blue;
+  position:absolute;
+}
+
+.atom-3:before{
+  content:"";
+  width:22px;
+  height:22px;
+  border-radius:50px;
+  background:red;
+  position:absolute;
+} */
+.atom-2 {
+  background-color: transparent;
+  position: absolute;
+  transform: rotateZ(-60deg) rotateY(73deg);
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  border: 10px dotted blue;
+  animation: spin1 5s linear infinite;
+}
+.atom-3 {
+  background-color: transparent;
+  transform: rotateZ(60deg) rotateY(-73deg);
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  border: 10px dotted red;
+  animation: spin2 5s linear infinite;
 }
 
 /* Footer */
 
 footer{
   position: relative;
+  padding: 10% 0 20%;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
   background: rgba(0, 0, 0, 0.801);
   height: 100vh;
+  margin: -18% 0 0;
+}
+
+.foot-bottom{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
 }
 
 /* Scroll Indicator */
@@ -405,4 +497,32 @@ footer{
   100%{
     width: 100%;
   }
+}
+
+/* Atom Spin Animation */
+
+@keyframes spin{
+	0%{
+  		transform: rotateZ(0deg) rotateY(-73deg) rotateX(0deg) rotate(0deg);
+    }
+    100%{
+  		transform: rotateZ(0deg) rotateY(-73deg) rotateX(0deg) rotate(360deg);
+    }
+}
+
+@keyframes spin1{
+	0%{
+  		transform: rotateZ(-60deg) rotateY(73deg) rotateX(0deg) rotate(0deg);
+    }
+    100%{
+  		transform: rotateZ(-60deg) rotateY(73deg) rotateX(0deg) rotate(360deg);
+    }
+}
+@keyframes spin2{
+	0%{
+  		transform: rotateZ(60deg) rotateY(-73deg) rotateX(0deg) rotate(0deg);
+    }
+    100%{
+  		transform: rotateZ(60deg) rotateY(-73deg) rotateX(0deg) rotate(360deg);
+    }
 }
