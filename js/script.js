@@ -35,6 +35,16 @@ $(".indicator2").click(function() {
         scrollTop: $(".glossary").offset().top
     }, 1000);
 });
+$(".indicator3").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".labtools").offset().top
+    }, 1000);
+});
+$(".indicator4").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".footer").offset().top
+    }, 1000);
+});
 // Practicals Carousel
 
     var $slider = $('.slider');
