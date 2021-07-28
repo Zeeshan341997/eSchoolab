@@ -122,6 +122,8 @@
         </div>
     </div>
 
+    <div class="top-scroll" onclick="scrollToTop();"></div>
+
     <header id="blur">
         <nav>
             <!-- logo -->
@@ -912,6 +914,7 @@ var formPopup = document.getElementById('formPopup');
 formPopup.classList.toggle('formActive');
 }
 
+
 if (annyang) {
 var formCommand = {
 'open login form': function() {
@@ -990,6 +993,19 @@ annyang.addCommands(formCommand);
 
 annyang.start();
 
+}
+
+// Scroll Top
+
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.top-scroll');
+    scroll.classList.toggle("active" , window.scrollY > 600);
+});
+
+function scrollToTop(){
+    window.scrollTo({
+        top:0
+    })
 }
 </script>
 

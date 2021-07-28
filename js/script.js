@@ -45,6 +45,20 @@ $(".indicator4").click(function() {
         scrollTop: $(".footer").offset().top
     }, 1000);
 });
+
+// Scroll Top
+
+// window.addEventListener('scroll', function(){
+//     var scroll = document.querySelector('.top-scroll');
+//     scroll.classList.toggle("active" , window.scrollY > 600);
+// });
+
+// function scrollToTop(){
+//     window.scrollTo({
+//         top:0
+//     })
+// }
+
 // Practicals Carousel
 
     var $slider = $('.slider');

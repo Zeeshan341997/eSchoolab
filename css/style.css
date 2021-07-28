@@ -9,11 +9,38 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+/* Scroll Top */
+
+.top-scroll{
+  position: fixed;
+  right: 40px;
+  bottom: 800px;
+  width: 80px;
+  height: 80px;
+  background:rgba(0, 0, 0, 0.945) url(../images/top.png) center no-repeat;
+  background-size: 100px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.top-scroll.active{
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
+}
+
 /* header section */
+
+header{
+  overflow: hidden;
+}
 
 .home-section {
   position: relative;
@@ -345,6 +372,7 @@ body {
   justify-content: center;
   left: 0;
   top: 0;
+  overflow: hidden;
 }
 .labtools .scroll-down-btn{
   left: 52%;
@@ -427,8 +455,9 @@ footer{
   position: relative;
   padding:200px 150px;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
-  background: rgba(0, 0, 0, 0.959);
+  background: rgba(0, 0, 0, 0.931);
   margin: -17% 0 0;
+  overflow: hidden;
 }
 
 .aboutus{
@@ -470,6 +499,7 @@ footer{
   align-items: center;
   text-decoration: none;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .facebook:hover{
