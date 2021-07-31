@@ -35,6 +35,30 @@ $(".indicator2").click(function() {
         scrollTop: $(".glossary").offset().top
     }, 1000);
 });
+$(".indicator3").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".labtools").offset().top
+    }, 1000);
+});
+$(".indicator4").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".footer").offset().top
+    }, 1000);
+});
+
+// Scroll Top
+
+// window.addEventListener('scroll', function(){
+//     var scroll = document.querySelector('.top-scroll');
+//     scroll.classList.toggle("active" , window.scrollY > 600);
+// });
+
+// function scrollToTop(){
+//     window.scrollTo({
+//         top:0
+//     })
+// }
+
 // Practicals Carousel
 
     var $slider = $('.slider');

@@ -9,11 +9,38 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+/* Scroll Top */
+
+.top-scroll{
+  position: fixed;
+  right: 40px;
+  bottom: 800px;
+  width: 80px;
+  height: 80px;
+  background:rgba(0, 0, 0, 0.945) url(../images/top.png) center no-repeat;
+  background-size: 100px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.top-scroll.active{
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
+}
+
 /* header section */
+
+header{
+  overflow: hidden;
+}
 
 .home-section {
   position: relative;
@@ -136,6 +163,47 @@ body {
   border-radius: 5px;
   background-color: #2672ff;
 }
+.bot-lineG{
+  position: absolute;
+  left: 7%;
+  width: 100px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
+}
+.bot-lineL{
+  position: absolute;
+  right: 43%;
+  width: 100px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
+}
+.bot-lineFa{
+  position: absolute;
+  left: 14%;
+  width: 70px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
+}
+.bot-lineFq{
+  position: absolute;
+  top: 40%;
+  width: 70px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
+}
+.bot-lineFc{
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 70px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
+}
 .bot-line-w{
   position: absolute;
   left: 42%;
@@ -239,6 +307,15 @@ body {
   background: #00000075;
   z-index: -1;
 }
+.glossary .scroll-down-btn{
+  left: 52%;
+  bottom: 10%;
+}
+
+.glossary .scroll-down-btn span{
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
 
 .row {
   align-items: center;
@@ -295,8 +372,17 @@ body {
   justify-content: center;
   left: 0;
   top: 0;
+  overflow: hidden;
+}
+.labtools .scroll-down-btn{
+  left: 52%;
+  bottom: 15%;
 }
 
+.labtools .scroll-down-btn span{
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
 .right-sec{
   padding: 10px;
   margin-right: 20px;
@@ -342,32 +428,6 @@ body {
   animation: spin 5s linear infinite;
 }
 
-
-/* .atom-1:before{
-	content:"";
-  width:22px;
-  height:22px;
-  border-radius:50px;
-  background:black;
-  position:absolute;
-}
-.atom-2:before{
-  content:"";
-  width:22px;
-  height:22px;
-  border-radius:50px;
-  background:blue;
-  position:absolute;
-}
-
-.atom-3:before{
-  content:"";
-  width:22px;
-  height:22px;
-  border-radius:50px;
-  background:red;
-  position:absolute;
-} */
 .atom-2 {
   background-color: transparent;
   position: absolute;
@@ -393,11 +453,118 @@ body {
 
 footer{
   position: relative;
-  padding: 10% 0 20%;
+  padding:200px 150px;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
-  background: rgba(0, 0, 0, 0.801);
-  height: 100vh;
-  margin: -18% 0 0;
+  background: rgba(0, 0, 0, 0.931);
+  margin: -17% 0 0;
+  overflow: hidden;
+  bottom: 0;
+}
+
+.aboutus{
+  margin-left: 100px;
+}
+
+.aboutus h2{
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+  font-size: 42px;
+  color: white;
+}
+
+.aboutus p{
+  font-size: 15px;
+  margin: 20px 0;
+  text-align: justify;
+  color: white;
+}
+
+.social-icons ul{
+  margin-top: 20px;
+  display: flex;
+}
+
+.social-icons ul li{
+  list-style: none; 
+}
+
+.social-icons ul li a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #222;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.facebook:hover{
+  background-color:#385898;
+  transition: 0.8s;
+}
+.instagram:hover{
+  background: linear-gradient(60deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  transition: 0.8s;
+}
+.twitter:hover{
+  background-color: skyblue;
+  transition: 0.8s;
+}
+.github:hover{
+  background-color:#6e5494 ;
+  transition: 0.8s;
+}
+
+.quick-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick-links h2{
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+
+.quick-links ul li{
+  list-style: none;
+}
+
+.quick-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.quick-links ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 20px;
+  background-color: #2672ff;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+
+.quick-links ul li a:hover:before {
+  width: 70px;
+}
+
+.contactus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus img{
+  width: 400px;
 }
 
 .foot-bottom{
@@ -405,8 +572,13 @@ footer{
   bottom: 0;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding:15px 5px 5px 5px;
   text-align: center;
+}
+
+.foot-bottom:hover{
+  color: #2672ff;
+  transition: 0.3s;
 }
 
 /* Scroll Indicator */
