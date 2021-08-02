@@ -38,9 +38,6 @@ body {
 
 /* header section */
 
-header{
-  overflow: hidden;
-}
 
 .home-section {
   position: relative;
@@ -153,6 +150,8 @@ header{
   position: absolute;
   width: 600px;
   color: white;
+  animation: textUp 4.5s linear infinite;
+  transform: translateY(100px);
 }
 
 .bot-line{
@@ -189,7 +188,7 @@ header{
 }
 .bot-lineFq{
   position: absolute;
-  top: 40%;
+  top: 48%;
   width: 70px;
   height: 6px;
   border-radius: 5px;
@@ -218,6 +217,7 @@ header{
   margin-bottom: 40px;
   font-size: 75px;
   text-align: center;
+  
 }
 .banner-text p{
   font-size: 24px;
@@ -453,11 +453,12 @@ header{
 
 footer{
   position: relative;
-  padding:200px 150px;
-  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  padding:250px 150px 150px 150px;
+  clip-path: polygon(0 0, 100% 36%, 100% 100%, 0 100%);
   background: rgba(0, 0, 0, 0.931);
   margin: -17% 0 0;
   overflow: hidden;
+  bottom: 0;
 }
 
 .aboutus{
@@ -540,13 +541,14 @@ footer{
 .quick-links ul li a{
   text-decoration: none;
   color: white;
+  line-height: 30px;
 }
 
 .quick-links ul li a:before {
   content: "";
   position: absolute;
   width: 0;
-  height: 20px;
+  height: 25px;
   background-color: #2672ff;
   transition: all ease 0.5s;
   z-index: -1;
@@ -580,7 +582,24 @@ footer{
   transition: 0.3s;
 }
 
+.ab{
+  height: 100vh;
+}
+
+/* Practical Slider Text Animation */
+
+@keyframes textUp {
+  10%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
 /* Scroll Indicator */
+
 
 @keyframes scrollIndicatorDown {
   0%{
