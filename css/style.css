@@ -38,9 +38,6 @@ body {
 
 /* header section */
 
-header{
-  overflow: hidden;
-}
 
 .home-section {
   position: relative;
@@ -153,6 +150,8 @@ header{
   position: absolute;
   width: 600px;
   color: white;
+  animation: textUp 4.5s linear infinite;
+  transform: translateY(100px);
 }
 
 .bot-line{
@@ -189,7 +188,7 @@ header{
 }
 .bot-lineFq{
   position: absolute;
-  top: 40%;
+  top: 48%;
   width: 70px;
   height: 6px;
   border-radius: 5px;
@@ -218,6 +217,7 @@ header{
   margin-bottom: 40px;
   font-size: 75px;
   text-align: center;
+  
 }
 .banner-text p{
   font-size: 24px;
@@ -451,10 +451,10 @@ header{
 
 /* Footer */
 
-footer{
-  position: relative;
-  padding:200px 150px;
-  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+.main-footer{
+  position: absolute;
+  padding:250px 150px 150px 150px;
+  clip-path: polygon(0 0, 100% 36%, 100% 100%, 0 100%);
   background: rgba(0, 0, 0, 0.931);
   margin: -17% 0 0;
   overflow: hidden;
@@ -540,13 +540,14 @@ footer{
 .quick-links ul li a{
   text-decoration: none;
   color: white;
+  line-height: 30px;
 }
 
 .quick-links ul li a:before {
   content: "";
   position: absolute;
   width: 0;
-  height: 20px;
+  height: 25px;
   background-color: #2672ff;
   transition: all ease 0.5s;
   z-index: -1;
@@ -580,7 +581,20 @@ footer{
   transition: 0.3s;
 }
 
+/* Practical Slider Text Animation */
+
+@keyframes textUp {
+  10%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
 /* Scroll Indicator */
+
 
 @keyframes scrollIndicatorDown {
   0%{
@@ -696,4 +710,54 @@ footer{
     100%{
   		transform: rotateZ(60deg) rotateY(-73deg) rotateX(0deg) rotate(360deg);
     }
+}
+
+/* Practical Page Style Start */
+
+/*  */
+
+.ab{
+  height: 100vh;
+}
+
+.custom-menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 100px 150px;
+  overflow: hidden;
+  height: 900px;
+}
+
+.menu1,.menu2,.menu3{
+  position: absolute;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  height: 400px;
+  width: 400px;
+  background-color: gray;
+  border: 2px solid black
+}
+.menu2{
+  left: 240px;
+}
+.menu3{
+  bottom: 95px;
+  left: 445px;
+}
+
+/* Footer */
+
+.footer{
+  position: absolute;
+  padding:100px 150px;
+  background: rgba(0, 0, 0, 0.931);
+  overflow: hidden;
+}
+.bot-lineFq2{
+  position: absolute;
+  top: 37%;
+  width: 70px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #2672ff;
 }
