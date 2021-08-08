@@ -41,28 +41,24 @@ body {
 
 .home-section {
   position: relative;
-  width: 100%;
   height: 100%;
   background-color: white;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 100%, 0 85%);
 }
 
 .home-section .icons-box {
   position: relative;
-  width: 100%;
   display: flex;
+  flex-direction: column;
   white-space: nowrap;
-  font-size: 55px;
+  font-size: 40px;
   justify-content: center;
-  left: -25%;
-  top: -25%;
-  transform: rotate(-30deg);
-  text-align: center;
-  line-height: 2;
+  transform: rotate(-32deg);
+  line-height: 2.5;
   overflow-wrap: normal;
+  height: 100%;
+  left: -25%;
 }
 
 .home-section i {
@@ -72,7 +68,7 @@ body {
   padding: 0 5px;
   user-select: none;
   cursor: default;
-  margin: 5px;
+  margin: 6px;
 }
 
 .home-section i:hover {
@@ -80,15 +76,22 @@ body {
   text-shadow: 0 0 120px rgb(16, 239, 255);
   transition: 0s;
 }
-
-.welcomebox {
+.welcomeTextBox{
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 20%;
-  left: 30%;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  top: 15%;
+  padding: 50px;
+}
+
+.welcomebox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
 }
 .wel-head,.welcomeHead{
   opacity: 0;
@@ -117,12 +120,14 @@ body {
 
 .practicals {
   position: relative;
-  margin:-35% 0 0;
+  margin:-40% 0 0;
   overflow: hidden;
   padding: 5% 0 20%;
   height: 100vh;
   clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner1, .banner2, .banner3{
@@ -164,7 +169,7 @@ body {
 }
 .bot-lineG{
   position: absolute;
-  left: 7%;
+  left: 12%;
   width: 100px;
   height: 6px;
   border-radius: 5px;
@@ -172,7 +177,6 @@ body {
 }
 .bot-lineL{
   position: absolute;
-  right: 43%;
   width: 100px;
   height: 6px;
   border-radius: 5px;
@@ -237,14 +241,29 @@ body {
 }
 
 .scroll-down-btn{
-  position: absolute;
-  left: 48%;
-  bottom: 45%;
+  position: relative;
   width: 50px;
   height: 50px;
-  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+  transform: rotate(45deg);
+  padding: 30px;
+  margin: 20px;
 }
-
+.practicals .scroll-down-btn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  padding: 30px;
+  margin: 20px;
+}
+.scroll-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  bottom: 5%;
+}
 .scroll-down-btn span{
   position: absolute;
   top: 0;
@@ -275,8 +294,7 @@ body {
 }
 
 .practicals .scroll-down-btn{
-  left: 50%;
-  bottom: 5%;
+  bottom: 0%;
 }
 
 .practicals .scroll-down-btn span{
@@ -291,11 +309,14 @@ body {
   overflow: hidden;
   height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  padding: 8% 0 20%;
+  padding: 5% 0 10%;
   background:url(../images/glossary-bg.jpg) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay{
@@ -307,8 +328,12 @@ body {
   background: #00000075;
   z-index: -1;
 }
-.glossary .scroll-down-btn{
-  left: 52%;
+.glossary .scroll-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
   bottom: 10%;
 }
 
@@ -364,19 +389,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
-  padding: 10% 0 16%;
-  margin: -17% 0 0;
+  padding: 10% 0 10%;
+  margin: -16% 0 0;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 0;
-  top: 0;
+  flex-direction: column;
   overflow: hidden;
 }
-.labtools .scroll-down-btn{
-  left: 52%;
-  bottom: 15%;
+.labtools .scroll-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
 }
 
 .labtools .scroll-down-btn span{
@@ -456,7 +483,7 @@ body {
   padding:250px 150px 150px 150px;
   clip-path: polygon(0 0, 100% 36%, 100% 100%, 0 100%);
   background: rgba(0, 0, 0, 0.931);
-  margin: -17% 0 0;
+  margin: -15% 0 0;
   overflow: hidden;
 }
 

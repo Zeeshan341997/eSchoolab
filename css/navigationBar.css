@@ -400,14 +400,16 @@ form.signup-form {
 
 header {
   position: relative;
-  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav {
-  position: absolute;
+  position: relative;
   display: flex;
   width: 100%;
-  justify-content: center;
   justify-content: space-around;
   align-items: center;
   padding: 5px;
@@ -418,7 +420,8 @@ nav {
 }
 
 nav a:hover {
-  color: black;
+  color: white;
+  transition: 0.5s;
 }
 
 /* page heading */
