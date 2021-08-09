@@ -2,12 +2,37 @@
 
 /* Home Page */
 
-@media(max-width: 1600px){
-  
+@media(max-width: 1550px){
+  .main-footer{
+    margin: -16% 0 0;
+  }
 }
 
-@media (max-width:1200px){
+@media(max-width: 1500px){
+  .main-footer{
+    margin: -16% 0 0;
+  }
+}
 
+@media(max-width: 1450px){
+  .labtools{
+    margin: -17% 0 0;
+  }
+  .main-footer{
+    margin: -17% 0 0;
+    clip-path: polygon(0 0, 100% 37%, 100% 100%, 0 100%);
+
+  }
+}
+@media (max-width:1400px){
+  .labtools{
+    margin: -18% 0 0;
+  }
+  .main-footer{
+    margin: -17% 0 0;
+    clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
+
+  }
 }
 
 @media (max-width: 990px) {
