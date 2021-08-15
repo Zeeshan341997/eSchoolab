@@ -29,11 +29,117 @@
     margin: -18% 0 0;
   }
   .main-footer{
-    margin: -17% 0 0;
-    clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
+    margin: -18% 0 0;
+    clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 100%);
 
   }
 }
+
+@media (max-width:1300px){
+  .labtools{
+    margin: -19% 0 0;
+  }
+  .main-footer{
+    margin: -19% 0 0;
+    clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 100%);
+
+  }
+}
+
+@media (max-width:1250px){
+  .labtools{
+    margin: -20% 0 0;
+  }
+  .main-footer{
+    margin: -20% 0 0;
+    clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 100%);
+
+  }
+}
+
+
+@media (max-width:1200px){
+  .home-section{
+    clip-path: none;
+  }
+  .practicals{
+    clip-path: none;
+  }
+  .glossary{
+    position: relative;
+    clip-path: none;
+    height: 100%;
+    padding: 2% 0 0;
+  }
+  .glossary .left-sec{
+    position: relative;
+    margin-left: 20px;
+    z-index: 9;
+  }
+
+  .glossary .img-right{
+    text-align: right;
+    width: 900px;
+    transform: translateY(20%);
+    z-index: 9;
+  }
+  .img-right:hover{
+    transform: translate(0px, 0%);
+  }
+  .glossary .scroll-box{
+    bottom: 5%;
+    z-index: 9;
+  }
+
+  .overlay{
+    z-index: 1;
+  }
+
+  .labtools{
+    clip-path: none;
+    margin: 0%;
+  }
+  .labtools .scroll-box{
+    bottom: 5%;
+    z-index: 9;
+  }
+  .labtools .right-sec{
+    position: relative;
+    z-index: 9;
+  }
+  .labtools .atom-box{
+    position: relative;
+    z-index: 9;
+  }
+  .main-footer{
+    clip-path: none;
+    margin: 0%;
+    padding: 50px 20px;
+  }
+  .main-footer .aboutus{
+    margin-left: 20px;
+  }
+  .main-footer .quick-links{
+    margin-left: 40px;
+  }
+  .quick-links h2{
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+  .quick-links ul{
+    padding: 0;
+  }
+  .bot-lineFq{
+    top: 33%;
+  }
+  .quick-links ul li a {
+    z-index: 2;
+  }
+  .quick-links ul li a:before {
+    z-index: 1;
+  }
+}
+
 
 @media (max-width: 990px) {
     .left-sidebar {
