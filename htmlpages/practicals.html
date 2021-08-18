@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-<body>
+<body class="bodyMain">
     <!-- left navbar -->
     <div class="left-sidebar">
         <div class="toggle">
@@ -136,7 +136,6 @@
             <button onclick="annyang.abort()">stop</button> -->
 
         </nav>
-
         
     </header>
 
@@ -144,9 +143,20 @@
         <div class="container">
             <div class="custom-menu">
                 <div class="menu-box">
-                    <div class="menu1"></div>
-                    <div class="menu2"></div>
-                    <div class="menu3"></div>
+                    <div class="line1">
+                        <div data-text="Biology" data-color="lightgreen" class="menu1">
+                            <p class="bioDes">
+                                Biology is the scientific study of life. It is a natural
+                                science with a broad scope but has several unifying themes
+                                that tie it together as a single, coherent field. For instance,
+                                all organisms are made up of cells that process hereditary
+                                information encoded in genes, which can be transmitted to future generations.
+                            </p>
+                            <button class="btnM">Learn Practicals</button>
+                        </div>
+                        <div data-text="Physics" data-color="#fff8a6" class="menu2"></div>
+                        <div data-text="Chemistry" data-color="lightblue" class="menu3"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +216,6 @@
 <script src="../js/anime.min.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/lettering.js"></script>
-<script src="../js/script.js"></script>
 <script src="../js/wow.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/fontawesome.js"></script>
@@ -214,6 +223,7 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/annyang.min.js"></script>
+<script src="../js/script.js"></script>
 <script>
 const signInBtn = document.querySelector("#sign-in-btn");
 const signUpBtn = document.querySelector("#sign-up-btn");

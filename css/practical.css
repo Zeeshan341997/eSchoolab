@@ -1,47 +1,103 @@
 /* Practical Page Style Start */
 
+section{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  }
+  
+ .custom-menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 60px 120px;
+  margin: 50px;
+}
+.menu-box{
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transition: background 0.25s;
+}
 
-.ab{
-    height: 100vh;
-  }
+
+.line1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu1,.menu2,.menu3{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 5px 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.8s;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu1{
+  background-color: #97ff77;
+}
+.menu1 .bioDes{
   
-  .custom-menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 60px 120px;
-    overflow: hidden;
-    height: 100vh;
-    margin: 50px;
-  }
-  .menu-box{
-      position: absolute;
-      width: 700px;
-      height: 700px;
-    border-radius: 100%;
-    border: 1px solid white;
-    margin: 20px;
-    padding: 40px;
-    box-shadow: 3px 6px 12px black;
-  }
-  .menu1,.menu2,.menu3{
-    position: absolute;
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    height: 400px;
-    width: 400px;
-    background-color: gray;
-    border: 2px solid black;
-    left: 0;
-    top: 0;
-  }
-  /* .menu2{
-    left: 240px;
-  }
-  .menu3{
-    bottom: 95px;
-    left: 445px;
-  } */
+  opacity: 0;
+}
+.menu2{
+  background-color: #fff788;
+}
+.menu3{
+  background-color: #9fc1ff;
+}
+
+.line1 div::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(0,calc(0 + 100px));
+  font-size: 150px;
+  text-transform: uppercase;
+  pointer-events: none;
+  font-weight: 900;
+  transition: 0.5s;
+  opacity: 1;
+}
   
+.line1 div:hover:before{
+  opacity: 0.2;
+  transform: translate(-50%,calc(100% + 190px));
+}
+.menu1:hover,.menu2:hover,.menu3:hover{
+  overflow: visible;
+  width: 400px;
+  height: 400px;
+  /* transform: scale(2.1); */
+}
+
+.menu1:hover .bioDes{
+  opacity: 1;
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+  font-weight: 400;
+
+}
+
   /* Footer */
   
   .footer{

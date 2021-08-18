@@ -46,18 +46,7 @@ $(".indicator4").click(function() {
     }, 1000);
 });
 
-// Scroll Top
 
-// window.addEventListener('scroll', function(){
-//     var scroll = document.querySelector('.top-scroll');
-//     scroll.classList.toggle("active" , window.scrollY > 600);
-// });
-
-// function scrollToTop(){
-//     window.scrollTo({
-//         top:0
-//     })
-// }
 
 // Practicals Carousel
 
@@ -100,4 +89,18 @@ $(".indicator4").click(function() {
 });
 
 
+// Practical Page Circle Background Color Change Animation
 
+
+let circle = document.querySelectorAll('.line1 div');
+let bg = document.querySelector('.bodyMain');
+
+circle.forEach(element => {
+    element.addEventListener('mouseenter', function(event){
+        let color = event.target.getAttribute('data-color');
+        bg.style.backgroundColor = color;
+    });
+    element.addEventListener('mouseleave', function(event){
+        bg.style.backgroundColor ='white';
+    });
+});
