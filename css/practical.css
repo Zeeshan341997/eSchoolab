@@ -53,15 +53,30 @@ section{
 .menu1{
   background-color: #97ff77;
 }
-.menu1 .bioDes{
-  
-  opacity: 0;
-}
 .menu2{
   background-color: #fff788;
 }
 .menu3{
   background-color: #9fc1ff;
+}
+.btnB {
+  border: 2px solid black;
+  outline: none;
+  border-radius: 49px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0;
+  transition: 0.8s;
+  padding: 10px 20px;
+}
+
+.btnB:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
 }
 
 .line1 div::before{
@@ -77,10 +92,13 @@ section{
   transition: 0.5s;
   opacity: 1;
 }
-  
+
 .line1 div:hover:before{
   opacity: 0.2;
   transform: translate(-50%,calc(100% + 190px));
+}
+.menu1 .bioDes,.menu2 .phyDes,.menu3 .cheDes{
+  opacity: 0;
 }
 .menu1:hover,.menu2:hover,.menu3:hover{
   overflow: visible;
@@ -89,13 +107,46 @@ section{
   /* transform: scale(2.1); */
 }
 
-.menu1:hover .bioDes{
+.menu1:hover .bioDes,.menu2:hover .phyDes,.menu3:hover .cheDes{
   opacity: 1;
   font-size: 15px;
   color: black;
   text-align: justify;
   font-weight: 400;
+  transition: 0.8s;
+}
 
+.bioHead,.phyHead,.cheHead{
+  position: absolute;
+  font-size: 130px;
+  font-weight: 900;
+  text-transform: uppercase;
+  left: -80%;
+  top: 30%;
+  opacity: 0;
+  transform: rotate(-90deg) translate(0, -280%);
+}
+
+.menu1:hover .bioHead{
+  transform: rotate(-90deg) translate(0, -150%);
+  top: 30%;
+  left: -80%;
+  text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.menu2:hover .phyHead{
+  transform: rotate(-90deg) translate(0, -280%);
+  top: 30%;
+  left: -80%;
+  text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.menu3:hover .cheHead{
+  transform: rotate(-90deg) translate(0, -480%);
+  top: 40%;
+  left: -80%;
+  text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
   /* Footer */
