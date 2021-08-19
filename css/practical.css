@@ -125,37 +125,21 @@ section{
 
 }
 
-.bioHead,.phyHead,.cheHead{
+.phyHead,.cheHead,.bioHead{
   position: absolute;
   font-size: 130px;
   font-weight: 900;
   text-transform: uppercase;
-  left: -80%;
-  top: 30%;
-  opacity: 0;
-  transform: rotate(-90deg) translate(0, -280%);
-}
-
-.menu1:hover .bioHead{
-  transform: rotate(-90deg) translate(0, -250%);
-  top: 30%;
+  transform: rotate(-90deg);
+  top: 5%;
   left: -50%;
   text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
-  opacity: 1;
+  opacity: 0;
+  transition: 0.5s;
 }
-.menu2:hover .phyHead{
-  transform: rotate(-90deg) translate(0, -280%);
-  top: 30%;
-  left: -80%;
-  text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-.menu3:hover .cheHead{
-  transform: rotate(-90deg) translate(0, -480%);
-  top: 40%;
-  left: -80%;
-  text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
-  opacity: 1;
+
+.js-tilt-glare{
+  border-radius: 15px;
 }
 
   /* Footer */

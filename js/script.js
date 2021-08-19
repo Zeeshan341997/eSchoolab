@@ -92,23 +92,68 @@ $(".indicator4").click(function() {
 // Practical Page Box Hover Background Color Change Animation
 
 
-let circle = document.querySelectorAll('.line1 div');
+let subBox = document.querySelectorAll('.line1 div');
 let bg = document.querySelector('.bodyMain');
+let bioHead = document.querySelector('.bioHead');
+let phyHead = document.querySelector('.phyHead');
+let cheHead = document.querySelector('.cheHead');
+let bioCard = document.querySelectorAll('.menu1');
+let phyCard = document.querySelectorAll('.menu2');
+let cheCard = document.querySelectorAll('.menu3');
 
-circle.forEach(element => {
+
+subBox.forEach(element => {
     element.addEventListener('mouseenter', function(event){
         let color = event.target.getAttribute('data-color');
         bg.style.backgroundColor = color;
+
     });
     element.addEventListener('mouseleave', function(event){
         bg.style.backgroundColor ='white';
+
     });
 });
 
+// Practical Page Heading Hover Animation
+
+bioCard.forEach(element => {
+    element.addEventListener('mouseenter', function(event){
+        bioHead.style.opacity = 1;
+        bioHead.style.top = '35%';
+    });
+    element.addEventListener('mouseleave', function(event){
+        bioHead.style.opacity = 0;
+        bioHead.style.top = '5%';
+
+    });
+});
+phyCard.forEach(element => {
+    element.addEventListener('mouseenter', function(event){
+        phyHead.style.opacity = 1;
+        phyHead.style.top = '35%';
+    });
+    element.addEventListener('mouseleave', function(event){
+        phyHead.style.opacity = 0;
+        phyHead.style.top = '5%';
+
+    });
+});
+cheCard.forEach(element => {
+    element.addEventListener('mouseenter', function(event){
+        cheHead.style.opacity = 1;
+        cheHead.style.top = '40%';
+        cheHead.style.left = '-60%';
+    });
+    element.addEventListener('mouseleave', function(event){
+        cheHead.style.opacity = 0;
+        cheHead.style.top = '5%';
+
+    });
+});
 // Practical Page Box Tilt Animation
 
 VanillaTilt.init(document.querySelectorAll(".line1 div"), {
-    max: 15,
+    max: 30,
     speed: 300,
     glare: true,
     "max-glare":1, 
