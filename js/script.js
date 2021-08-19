@@ -89,18 +89,30 @@ $(".indicator4").click(function() {
 });
 
 
-// Practical Page Circle Background Color Change Animation
+// Practical Page Box Hover Background Color Change Animation
 
 
 let circle = document.querySelectorAll('.line1 div');
 let bg = document.querySelector('.bodyMain');
+let boxHead = document.querySelector('h2');
 
 circle.forEach(element => {
     element.addEventListener('mouseenter', function(event){
         let color = event.target.getAttribute('data-color');
         bg.style.backgroundColor = color;
+        boxHead.style.opacity = 1;
     });
     element.addEventListener('mouseleave', function(event){
         bg.style.backgroundColor ='white';
+        boxHead.style.opacity = 0;
     });
+});
+
+// Practical Page Box Tilt Animation
+
+VanillaTilt.init(document.querySelectorAll(".menu1, .menu2, .menu3"), {
+    max: 15,
+    speed: 300,
+    glare: true,
+    "max-glare":1, 
 });

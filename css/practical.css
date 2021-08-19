@@ -1,5 +1,9 @@
 /* Practical Page Style Start */
 
+body{
+  transition: 0.5s;
+}
+
 section{
   position: relative;
   height: 100vh;
@@ -23,9 +27,6 @@ section{
   justify-content: center;
   align-items: center;
   box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
-  transform-style: preserve-3d;
-  perspective: 500px;
-  transition: background 0.25s;
 }
 
 
@@ -49,6 +50,9 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transition: background 0.25s;
 }
 .menu1{
   background-color: #97ff77;
@@ -102,9 +106,8 @@ section{
 }
 .menu1:hover,.menu2:hover,.menu3:hover{
   overflow: visible;
-  width: 400px;
-  height: 400px;
-  /* transform: scale(2.1); */
+  width: 300px;
+  height: 350px;
 }
 
 .menu1:hover .bioDes,.menu2:hover .phyDes,.menu3:hover .cheDes{
@@ -114,6 +117,12 @@ section{
   text-align: justify;
   font-weight: 400;
   transition: 0.8s;
+  transform: scale(0.9) translateZ(50px);
+}
+
+.line1 div:hover .btnB{
+  transform: scale(0.9) translateZ(50px);
+
 }
 
 .bioHead,.phyHead,.cheHead{
@@ -127,10 +136,10 @@ section{
   transform: rotate(-90deg) translate(0, -280%);
 }
 
-.menu1:hover .bioHead{
-  transform: rotate(-90deg) translate(0, -150%);
-  top: 30%;
-  left: -80%;
+.menu1:hover ~ .line1{
+  transform: rotate(-90deg) translate(0, 50%);
+  top: 50%;
+  left: 30%;
   text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
