@@ -136,10 +136,10 @@ section{
   transform: rotate(-90deg) translate(0, -280%);
 }
 
-.menu1:hover ~ .line1{
-  transform: rotate(-90deg) translate(0, 50%);
-  top: 50%;
-  left: 30%;
+.menu1:hover .bioHead{
+  transform: rotate(-90deg) translate(0, -250%);
+  top: 30%;
+  left: -50%;
   text-shadow: 0 30px 15px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
