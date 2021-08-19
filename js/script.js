@@ -100,6 +100,9 @@ let cheHead = document.querySelector('.cheHead');
 let bioCard = document.querySelectorAll('.menu1');
 let phyCard = document.querySelectorAll('.menu2');
 let cheCard = document.querySelectorAll('.menu3');
+let bioIcons = document.querySelector('.bioIcons');
+let phyIcons = document.querySelector('.phyIcons');
+let cheIcons = document.querySelector('.cheIcons');
 
 
 subBox.forEach(element => {
@@ -120,10 +123,14 @@ bioCard.forEach(element => {
     element.addEventListener('mouseenter', function(event){
         bioHead.style.opacity = 1;
         bioHead.style.top = '35%';
+        bioIcons.style.opacity = 1;
+        bioIcons.style.top = '0';
     });
     element.addEventListener('mouseleave', function(event){
         bioHead.style.opacity = 0;
         bioHead.style.top = '5%';
+        bioIcons.style.opacity = 0;
+        bioIcons.style.top = '95%';
 
     });
 });
@@ -131,10 +138,14 @@ phyCard.forEach(element => {
     element.addEventListener('mouseenter', function(event){
         phyHead.style.opacity = 1;
         phyHead.style.top = '35%';
+        phyIcons.style.opacity = 1;
+        phyIcons.style.top = '0';
     });
     element.addEventListener('mouseleave', function(event){
         phyHead.style.opacity = 0;
         phyHead.style.top = '5%';
+        phyIcons.style.opacity = 0;
+        phyIcons.style.top = '95%';
 
     });
 });
@@ -143,10 +154,14 @@ cheCard.forEach(element => {
         cheHead.style.opacity = 1;
         cheHead.style.top = '40%';
         cheHead.style.left = '-60%';
+        cheIcons.style.opacity = 1;
+        cheIcons.style.top = '0';
     });
     element.addEventListener('mouseleave', function(event){
         cheHead.style.opacity = 0;
         cheHead.style.top = '5%';
+        cheIcons.style.opacity = 0;
+        cheIcons.style.top = '95%';
 
     });
 });

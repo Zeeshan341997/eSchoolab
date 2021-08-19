@@ -142,6 +142,46 @@ section{
   border-radius: 15px;
 }
 
+.subIcons{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 30%;
+  right: -40%;
+}
+
+.subIcons i{
+  font-size: 250px;
+  text-shadow: 3px 6px 9px rgba(0, 0, 0, 0.6);
+  margin: 20px;
+}
+
+.bioIcons{
+  position: absolute;
+  color: lightgreen;
+  top: -95%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.phyIcons{
+  position: absolute;
+  color: #fff8a6;
+  top: -95%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.cheIcons{
+  position: absolute;
+  color: lightblue;
+  top: -95%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.subIcons .iconBox{
+  display: flex;
+  flex-direction: column;
+}
+
   /* Footer */
   
   .footer{
