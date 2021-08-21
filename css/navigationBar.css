@@ -99,7 +99,7 @@
   text-decoration: none;
   color: black;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 10px 15px;
 }
 
@@ -253,6 +253,7 @@ form.signup-form {
 }
 
 .btnM {
+  text-decoration: none;
   border: 2px solid #2672ff;
   outline: none;
   border-radius: 49px;
