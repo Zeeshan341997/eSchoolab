@@ -20,12 +20,25 @@ section{
     color: black !important;
     font-weight: 500;
 }
-
+.nav-link.active:hover{
+    border-radius: 15px 0 0 15px!important;
+    margin-right: -16px;
+}
 .inner-left-menu .nav-link {
     color: white;
     margin-bottom: 5px;
     border-radius: 15px 0 0 15px!important;
     margin-right: -16px;
+    height: 50px;
+}
+
+.nav-link.active::before{
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red !important;
+    padding: 5px;
 }
 
 .nav-link:hover{
