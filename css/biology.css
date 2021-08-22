@@ -1,6 +1,4 @@
-section{
-    height: 100vh;
-}
+
 .sc-card{
     padding: 15px;
     background: white;
@@ -10,16 +8,41 @@ section{
 }
 .inner-left-menu {
     background: #2672ff;
-    padding: 15px 0 15px 15px;
+    padding: 45px 0 25px 15px;
     width: 30%;
     margin-right: 10px;
     border-radius: 25px;
+    /* box-shadow: 15px 0 0 #2672ff; */
 }
 .nav-link.active {
     background-color: #fff !important;
     color: black !important;
     font-weight: 500;
 }
+
+/* .nav-link::before{
+    content: '';
+    position: absolute;
+    top: 143px;
+    left: 630px;
+    width: 30px;
+    height: 30px;
+    background: #2672ff;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 white;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    top: 233px;
+    left: 630px;
+    width: 30px;
+    height: 30px;
+    background: #2672ff;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 white;
+} */
+
 .nav-link.active:hover{
     border-radius: 15px 0 0 15px!important;
     margin-right: -16px;
@@ -27,18 +50,13 @@ section{
 .inner-left-menu .nav-link {
     color: white;
     margin-bottom: 5px;
+    margin-top: 5px;
     border-radius: 15px 0 0 15px!important;
     margin-right: -16px;
-    height: 50px;
-}
-
-.nav-link.active::before{
-    content: '';
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: red !important;
-    padding: 5px;
+    height: 60px;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav-link:hover{
