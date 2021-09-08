@@ -1,3 +1,94 @@
+const signInBtn = document.querySelector("#sign-in-btn");
+const signUpBtn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".main-container");
+
+signUpBtn.addEventListener('click', () => {
+    container.classList.add("sign-up-mode");
+});
+
+signInBtn.addEventListener('click', () => {
+    container.classList.remove("sign-up-mode");
+});
+
+function loginForm(){
+var blur = document.getElementById('blur');
+blur.classList.toggle('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.toggle('formActive');
+}
+
+if (annyang) {
+var formCommand = {
+'open login form': function() {
+var blur = document.getElementById('blur');
+blur.classList.add('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.add('formActive');
+},
+
+'close login form': function() {
+var blur = document.getElementById('blur');
+blur.classList.remove('formActive');
+var formPopup = document.getElementById('formPopup');
+formPopup.classList.remove('formActive');
+},
+
+'open home page':function(){
+    window.open('../index.html');
+
+},
+'open lab tool page':function(){
+    window.open('labTools.html');
+
+},
+'open glosary page':function(){
+    window.open('glosary.html');
+
+},
+'open about page':function(){
+    window.open('about.html');
+
+},
+
+'sign up': function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.add("sign-up-mode");
+},
+'sign in':function(){
+
+    const container = document.querySelector(".main-container");
+    container.classList.remove("sign-up-mode");
+},
+
+'write username *tag': function(variable){
+    let uname = document.getElementById("uname");
+    uname.value = variable;
+},
+
+'write password *tag': function(variable){
+    let password = document.getElementById("pass");
+    password.value = variable;
+},
+
+'login *tag': function(variable){
+    let submit = document.getElementById("submit");
+    submit.login = click();
+}
+
+}
+  
+// Add our commands to annyang
+annyang.addCommands(formCommand);
+
+
+// Start listening. You can call this here, or attach this call to an event, button, etc.
+
+annyang.start();
+
+}
+
+
 // Side Menu Bar
 
 $(document).ready(function(){
