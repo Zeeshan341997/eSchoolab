@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../images/fav-ico.png">
-        <title>Physics</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <title>Biology</title>
+        <link rel="stylesheet" href="../css/biology.css">
         <link rel="stylesheet" href="../css/navigationBar.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/quiz.css">
     </head>
 <body>
     <!-- left navbar -->
@@ -17,6 +18,7 @@
             <span class="s1"></span>
             <span class="s2"></span>
             <span class="s3"></span>
+            <img src="../images/close.png">
         </div>
         <div class="social">
             <a href="#">Facebook</a>
@@ -26,16 +28,16 @@
     </div>
     <div class="nav-toggle">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Practicals</a></li>
-            <li><a href="#">Glosary</a></li>
-            <li><a href="#">Lab Tools</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="practicals.html">Practicals</a></li>
+            <li><a href="glosary.html">Glosary</a></li>
+            <li><a href="labTools.html">Lab Tools</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </div>
 
     <div class="main-container" id="formPopup">
-        <a href="#" onclick="loginForm()" class="form-close"><img src="images/close.png"></a>
+        <a href="#" onclick="loginForm()" class="form-close"><img src="../images/close.png"></a>
         <div class="form-container">
             <div class="signin-signup">
                 <form action="" class="signin-form">
@@ -121,265 +123,390 @@
     <header id="blur">
         <nav>
             <!-- logo -->
-            <a href="" class="logo"><img src="../images/logo2.png" alt="">eSchooLab<img src="../images/logo.png" alt=""></a>
+            <a href="index.html" class="logo">eSchooLab</a>
 
             <!-- page heading -->
-            <div class="page-header"><a href="../index.html">Physics</a></div>
+            <div class="page-header"><a href="biology.html">Biology</a></div>
 
             <!-- login button -->
             <div class="login-btn">
-                <a href="#" onclick="loginForm()"><i class="fas fa-power-off"></i></a>
+                <a href="#" onclick="loginForm()">Log In / Sign Up</a>
             </div>
             <!-- <button onclick="annyang.start()">start</button>
             <button onclick="annyang.abort()">stop</button> -->
+
         </nav>
     </header>
 
-    <section>
-
-        <div class="container-fluid p-5">
-            <div class="bg p-5">
-                <div class="">
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(188, 189, 147), rgb(151, 76, 76));  transform: skewX(45deg); box-shadow: 100px -50px 100px rgba(255, 255, 255, 0.5);">
-                        </div>
-                        <div style="color: rgb(14, 14, 107); margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 1a</h5>
-                        <h3>Relation Between Volume And Height</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 1b</h5>
-                        <h3>Hooke's Law</h3>
+    <section id="blur2">
+        <div class="container mt-5">
+            <div class="sc-card">
+                <div class="d-flex align-items-start">
+                    <div class="inner-left-menu">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-p1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p1" type="button" role="tab" aria-controls="v-pills-p1" aria-selected="true">01.Digestive System</button>
+                            <button class="nav-link" id="v-pills-p2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p2" type="button" role="tab" aria-controls="v-pills-p2" aria-selected="false">02.Pulmonary Respiration</button>
+                            <button class="nav-link" id="v-pills-p3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p3" type="button" role="tab" aria-controls="v-pills-p3" aria-selected="false">03.Circulatory System</button>
+                            <button class="nav-link" id="v-pills-p4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p4" type="button" role="tab" aria-controls="v-pills-p4" aria-selected="false">04.Photosynthesis</button>
+                            <button class="nav-link" id="v-pills-p5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p5" type="button" role="tab" aria-controls="v-pills-p5" aria-selected="false">05.Transpiration</button>
+                            <button class="nav-link" id="v-pills-p6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p6" type="button" role="tab" aria-controls="v-pills-p6" aria-selected="false">06.Osmosis</button>
+                            <button class="nav-link" id="v-pills-p7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p7" type="button" role="tab" aria-controls="v-pills-p7" aria-selected="false">07.Morphology of Vinca Rosea</button>
+                            <button class="nav-link" id="v-pills-p8a-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p8a" type="button" role="tab" aria-controls="v-pills-p8a" aria-selected="false">08-A.Microscope</button>
+                            <button class="nav-link" id="v-pills-p8b-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p8b" type="button" role="tab" aria-controls="v-pills-p8b" aria-selected="false">08-B.Unicellular Organism</button>
+                            <button class="nav-link" id="v-pills-p9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-p9" type="button" role="tab" aria-controls="v-pills-p9" aria-selected="false">09.Classification</button>
                         </div>
                     </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 2</h5>
-                        <h3>Vernier Callipers</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 3a</h5>
-                        <h3>Screw Guage</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 3b</h5>
-                        <h3>Diameter Of Wire</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 4</h5>
-                        <h3>Principle Of Moments</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 5</h5>
-                        <h3>Vector Addition</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 6</h5>
-                        <h3>Simple Pendulum</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 7</h5>
-                        <h3>Archimede's Principle</h3>
+                    <div class="content-page">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-p1" role="tabpanel" aria-labelledby="v-pills-p1-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p2" role="tabpanel" aria-labelledby="v-pills-p2-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                             </div>
+                            <div class="tab-pane fade" id="v-pills-p3" role="tabpanel" aria-labelledby="v-pills-p3-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p4" role="tabpanel" aria-labelledby="v-pills-p4-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p5" role="tabpanel" aria-labelledby="v-pills-p5-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p6" role="tabpanel" aria-labelledby="v-pills-p6-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p7" role="tabpanel" aria-labelledby="v-pills-p7-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p8a" role="tabpanel" aria-labelledby="v-pills-p8a-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p8b" role="tabpanel" aria-labelledby="v-pills-p8b-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-p9" role="tabpanel" aria-labelledby="v-pills-p9-tab">
+                                <div class="sc-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt optio. Dolorum, sunt praesentium. Nostrum ad, rem sint incidunt sed officiis possimus animi nihil vitae corporis corrupti! Culpa, placeat non?
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 8</h5>
-                        <h3>Verification Of OHM's Law</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 9</h5>
-                        <h3>Convex Lens</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 10a</h5>
-                        <h3>Magnetic Lines</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 10b</h5>
-                        <h3>Center Of Gravity (Alternate)</h3>
-                        </div>
-                    </div>
-    
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 11</h5>
-                        <h3>Laws Of Reflection</h3>
-                        </div>
-                    </div>
-
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 12</h5>
-                        <h3>Concave Mirror</h3>
-                        </div>
-                    </div>
-
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 13</h5>
-                        <h3>Refractive Index</h3>
-                        </div>
-                    </div>
-
-                    <div class="container-md pracDes mt-5 shadow">
-                        <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
-                        </div>
-                        <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
-                        <h5>Practical 14</h5>
-                        <h3>Prism</h3>
-                        </div>
-                    </div>
-                    
                 </div>
-                
             </div>
+            
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+        
         </div>
 
     </section>
+    <div class="container-fluid p-5">
+        <div class="bg p-5">
+            <div class="">
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(188, 189, 147), rgb(151, 76, 76));  transform: skewX(45deg); box-shadow: 100px -50px 100px rgba(255, 255, 255, 0.5);">
+                    </div>
+                    <div style="color: rgb(14, 14, 107); margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 1a</h5>
+                    <h3>Relation Between Volume And Height</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 1b</h5>
+                    <h3>Hooke's Law</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 2</h5>
+                    <h3>Vernier Callipers</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 3a</h5>
+                    <h3>Screw Guage</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 3b</h5>
+                    <h3>Diameter Of Wire</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 4</h5>
+                    <h3>Principle Of Moments</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 5</h5>
+                    <h3>Vector Addition</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 6</h5>
+                    <h3>Simple Pendulum</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 7</h5>
+                    <h3>Archimede's Principle</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 8</h5>
+                    <h3>Verification Of OHM's Law</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 9</h5>
+                    <h3>Convex Lens</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 10a</h5>
+                    <h3>Magnetic Lines</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 10b</h5>
+                    <h3>Center Of Gravity (Alternate)</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 11</h5>
+                    <h3>Laws Of Reflection</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 12</h5>
+                    <h3>Concave Mirror</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 13</h5>
+                    <h3>Refractive Index</h3>
+                    </div>
+                </div>
+
+                <div class="container-md pracDes mt-5 shadow">
+                    <div style="max-width: 700px; height: 600px; background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87));  transform: skewX(45deg); box-shadow: 100px -50px 80px rgb(126, 126, 126);">
+                    </div>
+                    <div class="text-light" style="margin-left: 10px; margin-top: -480px; transform: skewX(0deg); height: 60px; width: 500px; position: relative; z-index: 1;">
+                    <h5>Practical 14</h5>
+                    <h3>Prism</h3>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer container-fluid" id="blur3">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-5 aboutus">
+                    <h2>About Us</h2>
+                    <span class="bot-lineFa"></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus 
+                    incidunt quo tenetur deleniti maiores. Consequuntur ipsa sapiente nesciunt
+                    necessitatibus, blanditiis nisi autem quae modi aperiam sequi voluptatum officia natus?</p>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="" class="github"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 quick-links">
+                    <h2 class="mb-4">Quick Links</h2>
+                    <span class="bot-lineFq2"></span>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Practicals</a>
+                        </li>
+                        <li>
+                            <a href="#">Glossary</a>
+                        </li>
+                        <li>
+                            <a href="#">Lab Tools</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 contactus">
+                    <div class="footer-logo">
+                        <img src="" alt="">
+                        LOGO
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom container-fluid">
+            <p>Copyright&copy; 2021 eScoolab.tk All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="../js/question.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="../js/quiz.js"></script>
 
 </body>
-<script src="../js/anime.min.js"></script>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/lettering.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/annyang.min.js"></script>
+<script src="../js/vanilla-tilt.min.js"></script>
+<script src="../js/fontawesome.js"></script>
+
 <script src="../js/script.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-<script>
-const signInBtn = document.querySelector("#sign-in-btn");
-const signUpBtn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".main-container");
-
-signUpBtn.addEventListener('click', () => {
-    container.classList.add("sign-up-mode");
-});
-
-signInBtn.addEventListener('click', () => {
-    container.classList.remove("sign-up-mode");
-});
-
-function loginForm(){
-var blur = document.getElementById('blur');
-blur.classList.toggle('formActive');
-var formPopup = document.getElementById('formPopup');
-formPopup.classList.toggle('formActive');
-}
-
-if (annyang) {
-var formCommand = {
-'kholo': function() {
-var blur = document.getElementById('blur');
-blur.classList.add('formActive');
-var formPopup = document.getElementById('formPopup');
-formPopup.classList.add('formActive');
-},
-
-'close login form': function() {
-var blur = document.getElementById('blur');
-blur.classList.remove('formActive');
-var formPopup = document.getElementById('formPopup');
-formPopup.classList.remove('formActive');
-},
-
-
-'sign up': function(){
-
-    const container = document.querySelector(".main-container");
-    container.classList.add("sign-up-mode");
-},
-'sign in':function(){
-
-    const container = document.querySelector(".main-container");
-    container.classList.remove("sign-up-mode");
-},
-
-'write username *tag': function(variable){
-    let uname = document.getElementById("uname");
-    uname.value = variable;
-},
-
-'write password *tag': function(variable){
-    let password = document.getElementById("pass");
-    password.value = variable;
-},
-
-'login *tag': function(variable){
-    let submit = document.getElementById("submit");
-    submit.login = click();
-}
-
-}
-  
-// Add our commands to annyang
-annyang.addCommands(formCommand);
-
-
-// Start listening. You can call this here, or attach this call to an event, button, etc.
-
-annyang.start();
-
-}
-</script>
 
 </html>
+

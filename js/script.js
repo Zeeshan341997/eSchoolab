@@ -34,21 +34,37 @@ formPopup.classList.remove('formActive');
 },
 
 'open home page':function(){
-    window.open('../index.html');
+    window.open('../index.html','_self');
 
 },
 'open lab tool page':function(){
-    window.open('labTools.html');
+    window.open('../htmlpages/labTools.html','_self');
 
 },
-'open glosary page':function(){
-    window.open('glosary.html');
+'open glossary page':function(){
+    window.open('../htmlpages/glosary.html','_self');
 
 },
-'open about page':function(){
-    window.open('about.html');
+'open practical page':function(){
+    window.open('../htmlpages/practicals.html','_self');
 
 },
+'open biology page':function(){
+    window.open('../htmlpages/biology.html','_self');
+
+},
+'open physics page':function(){
+    window.open('../htmlpages/physics.html','_self');
+
+},
+'open chemistry page':function(){
+    window.open('../htmlpages/chemistry.html','_self');
+
+},
+// 'open about page':function(){
+//     window.open('about.html');
+
+// },
 
 'sign up': function(){
 
@@ -71,9 +87,10 @@ formPopup.classList.remove('formActive');
     password.value = variable;
 },
 
-'login *tag': function(variable){
+'login': function(variable){
     let submit = document.getElementById("submit");
-    submit.login = click();
+    let formContainer = document.querySelector('.form-container');
+    let heading = document.querySelector('.signin-signup .signin-form h2');
 }
 
 }
