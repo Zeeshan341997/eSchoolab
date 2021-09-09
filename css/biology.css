@@ -213,3 +213,251 @@ text-align: center;
 color: #2672ff;
 transition: 0.3s;
 }
+
+.pracDes{
+    background-image: url(../images/frog.jpg);
+    background-size: 70%;
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0px 10px 50px 10px;
+}
+.topic a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    max-width: 700px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87)); 
+    transform: skewX(45deg);
+    box-shadow: 100px -50px 80px rgb(126, 126, 126);
+}
+.titletext{
+    margin-left: 10px;
+    margin-top: -480px;
+    transform: skewX(0deg);
+    height: 60px;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+.ali_can{
+    float: left;
+    margin-top: 10px;
+}
+.ali_can > div{
+    background-color: lightgrey;
+    padding: 10px;
+    transition: background-color 1s;
+}
+.ali_can > div:hover{
+    background-color: rgba(42, 60, 63, 0.5);
+}
+.img_board{
+    height: 300px auto;
+    width: auto;
+    border-radius: 5px;
+    margin: 50px 0px 20px 0px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pracimag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.pageback{
+    background-color: whitesmoke;
+    height: auto;
+    padding: 20px;
+   
+}
+.identedpage{
+    background-color: lightblue;
+    height: auto;
+    padding: 30px;
+    box-shadow: 1px 1px 80px inset white;
+}
+.heading{
+    background-image: linear-gradient(to right,rgba(255,255,255,0.5), rgba(1,1,1,0.9), rgba(255,255,255,0.5));
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    width: 700px;
+    color: white;
+    transform: translate(250px);
+    margin-bottom: 50px;
+}
+.heading h1{
+    margin-left: 50px;
+}
+.span{
+    color:black;
+    font-style: italic;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: rgba(236, 253, 0, 0.5);
+    padding: 5px;
+}
+.taghead{
+    position: absolute;
+    left: 250px;
+    top: 55px;
+    color: black;
+    font-size: 18px;
+    text-shadow: -2px 5px 3px gray;
+    z-index: 11;
+}
+.pracnum{
+    float: left;
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    border: 2px dashed yellowgreen;
+    border-radius: 25px 10px 25px 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px gray, 1px 1px 10px inset yellowgreen;
+    transform: rotate(-50deg);
+    position: relative;
+    top: 15px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.pracnum div{
+    color: purple;
+    transform: rotate(50deg);
+    font-size: 50px;
+}
+.apparatus{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.chem{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.apparatus div{
+    height: 150px;
+    width: 150px;
+    background-color: thistle;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(41, 41, 41, 0.5);
+    overflow: hidden;
+}
+.chem div{
+    height: 150px;
+    width: 150px;
+    background-color: thistle;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(41, 41, 41, 0.5);
+    overflow: hidden;
+}
+.tags{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: darkslategrey;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    box-shadow: 1px 1px 15px lightblue;
+}
+.inhead{
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgba(238, 255, 0, 0.7);
+    border-right: 3px solid yellowgreen;
+    border-left: 3px solid yellowgreen;
+    width: auto;
+    letter-spacing: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    text-shadow: 1px 1px 5px yellowgreen;
+}
+.section{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.allprac{
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.allprac div{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: box-shadow 1s;
+    border: 1px solid lightseagreen;
+    
+}
+.allprac a div:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.allprac a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.pracnav{
+    background-color: lightskyblue;
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 5px 5px lightgray;
+    border-radius: 5px;
+}
+.pracnav a{
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: large;
+    transition: color 1s;
+}
+.pracnav a:hover{
+    color: black;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 88.90%;
+}
