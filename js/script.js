@@ -33,31 +33,31 @@ var formPopup = document.getElementById('formPopup');
 formPopup.classList.remove('formActive');
 },
 
-'open home page':function(){
+'go to the home page':function(){
     window.open('../index.html','_self');
 
 },
-'open lab tool page':function(){
+'lab equipments':function(){
     window.open('../htmlpages/labTools.html','_self');
 
 },
-'open glossary page':function(){
+'go to the glossary page':function(){
     window.open('../htmlpages/glosary.html','_self');
 
 },
-'open practical page':function(){
+'go to the practical page':function(){
     window.open('../htmlpages/practicals.html','_self');
 
 },
-'open biology page':function(){
+'open biology':function(){
     window.open('../htmlpages/biology.html','_self');
 
 },
-'open physics page':function(){
+'open physics':function(){
     window.open('../htmlpages/physics.html','_self');
 
 },
-'open chemistry page':function(){
+'open chemistry':function(){
     window.open('../htmlpages/chemistry.html','_self');
 
 },
@@ -91,7 +91,12 @@ formPopup.classList.remove('formActive');
     let submit = document.getElementById("submit");
     let formContainer = document.querySelector('.form-container');
     let heading = document.querySelector('.signin-signup .signin-form h2');
+    window.open('../','_self');
+},
+'reload tab': function(variable){
+    window.open('../','_self');
 }
+
 
 }
   
@@ -101,9 +106,10 @@ annyang.addCommands(formCommand);
 
 // Start listening. You can call this here, or attach this call to an event, button, etc.
 
-annyang.start();
+// annyang.start();
 
 }
+
 
 
 // Side Menu Bar
@@ -130,7 +136,8 @@ $(document).ready(function(){
             });
         }
     });
-
+    
+    
 // Scroll Indicator
 
 $(".indicator1").click(function() {
@@ -153,7 +160,6 @@ $(".indicator4").click(function() {
         scrollTop: $(".footer").offset().top
     }, 1000);
 });
-
 
 
 // Practicals Carousel

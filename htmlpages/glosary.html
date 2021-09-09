@@ -122,18 +122,30 @@
 
     <header id="blur">
         <nav>
-            <!-- logo -->
-            <a href="../index.html" class="logo">eSchooLab</a>
+            <div class="nav-left-item">
+                <!-- logo -->
+                <a href="/index.html" class="logo">
+                    <img src="../images/logo.png" alt="">
+                </a>
+            </div>
 
             <!-- page heading -->
             <div class="page-header"><a href="../index.html">Glosary</a></div>
 
-            <!-- login button -->
-            <div class="login-btn">
-                <a href="#" onclick="loginForm()">Log In / Sign Up</a>
+            <div class="nav-right-items">
+                <!-- login button -->
+                <div class="login-btn">
+                    <a href="#" onclick="loginForm()">Log In / Sign Up</a>
+                </div>
+                <div class="voiceRecognitionBtn">
+                    <div class="VoiceToggleOn">
+                        <i onclick="annyang.start();" class="voiceIndicator"></i>
+                    </div>
+                    <div class="VoiceToggleOff">
+                        <i onclick="annyang.abort();" class="voiceIndicator"></i>
+                    </div>
+                </div>
             </div>
-            <!-- <button onclick="annyang.start()">start</button>
-            <button onclick="annyang.abort()">stop</button> -->
 
         </nav>
 

@@ -78,13 +78,14 @@ body {
 }
 .welcomeTextBox{
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  top: 15%;
-  padding: 50px;
 }
 
 .welcomebox {
@@ -92,6 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10%;
+  text-align: center;
 }
 .wel-head,.welcomeHead{
   opacity: 0;
