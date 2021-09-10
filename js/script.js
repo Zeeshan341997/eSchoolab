@@ -12,7 +12,12 @@ signInBtn.addEventListener('click', () => {
 
 function loginForm(){
 var blur = document.getElementById('blur');
+var blur2 = document.getElementById('blur2');
+var blur3 = document.getElementById('blur3');
 blur.classList.toggle('formActive');
+blur2.classList.toggle('formActive');
+blur3.classList.toggle('formActive');
+
 var formPopup = document.getElementById('formPopup');
 formPopup.classList.toggle('formActive');
 }
@@ -21,14 +26,23 @@ if (annyang) {
 var formCommand = {
 'open login form': function() {
 var blur = document.getElementById('blur');
+var blur2 = document.getElementById('blur2');
+var blur3 = document.getElementById('blur3');
+
 blur.classList.add('formActive');
+blur2.classList.add('formActive');
+blur3.classList.add('formActive');
 var formPopup = document.getElementById('formPopup');
 formPopup.classList.add('formActive');
 },
 
 'close login form': function() {
 var blur = document.getElementById('blur');
+var blur2 = document.getElementById('blur2');
+var blur3 = document.getElementById('blur3');
 blur.classList.remove('formActive');
+blur2.classList.remove('formActive');
+blur3.classList.remove('formActive');
 var formPopup = document.getElementById('formPopup');
 formPopup.classList.remove('formActive');
 },
@@ -88,11 +102,22 @@ formPopup.classList.remove('formActive');
 },
 
 'login': function(variable){
+    let myForm = document.querySelector('.signin-form');
+    let myForm2 = document.querySelector('.signup-form');
+
+    let formareainner = document.querySelector('.signin-signup');
+    let heading = document.querySelector('.signin-signup h2.success');
     let submit = document.getElementById("submit");
-    let formContainer = document.querySelector('.form-container');
-    let heading = document.querySelector('.signin-signup .signin-form h2');
-    window.open('../','_self');
+    myForm.remove();
+    myForm2.remove();
+    heading.innerHTML="Success";
+    let html = '';
+    html += `<div class="alert alert-success" role="alert">
+                 You are successfully logged in
+            </div>`;
+    formareainner.innerHTML = html;
 },
+
 'reload tab': function(variable){
     window.open('../','_self');
 }
