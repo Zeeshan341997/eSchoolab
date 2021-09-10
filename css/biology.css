@@ -229,13 +229,13 @@ transition: 0.3s;
     text-decoration: none;
     color: white;
 }
-.title{
+/* .title{
     max-width: 700px;
     height: 600px;
     background-image: linear-gradient(to right, rgb(54, 54, 54), rgb(87, 87, 87)); 
     transform: skewX(45deg);
     box-shadow: 100px -50px 80px rgb(126, 126, 126);
-}
+} */
 .titletext{
     margin-left: 10px;
     margin-top: -480px;

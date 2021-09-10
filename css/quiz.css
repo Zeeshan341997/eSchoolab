@@ -36,7 +36,7 @@
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
-    z-index: 5;
+    z-index: 90;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
