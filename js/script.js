@@ -315,3 +315,23 @@ VanillaTilt.init(document.querySelectorAll(".line1 div"), {
 //     $('.VoiceToggleOn').toggle(add.annyang.start());
 //     $('.VoiceToggleOff').toggle(annyang.abort());
 // });
+
+// gsap.timeline({
+//     scrollTrigger:{
+//         trigger:'#practical1',
+//         start:'center center',
+//         end:'bottom top',
+//         scrub:1,
+//         markers:true,
+//         pin:true
+//     }
+// })
+
+// .from("#frog",{opacity:0})
+// .to("#frog",{opacity:0})
+
+// .from("#theory",{opacity:0})
+// .to("#theory",{opacity:0})
+
+// .from("#method",{opacity:0})
+// .to("#method",{opacity:0})
