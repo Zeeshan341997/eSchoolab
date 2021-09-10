@@ -316,22 +316,29 @@ VanillaTilt.init(document.querySelectorAll(".line1 div"), {
 //     $('.VoiceToggleOff').toggle(annyang.abort());
 // });
 
-gsap.timeline({
-    scrollTrigger:{
-        trigger:'#practical1',
-        start:'top',
-        end:'bottom',
-        scrub:1,
-        markers:true,
-        pin:true
-    }
-})
+// gsap.timeline({
+//     scrollTrigger:{
+//         trigger:'#practical1',
+//         start:'top',
+//         end:'bottom',
+//         scrub:1,
+//         markers:true,
+//         pin:true
+//     }
+// })
 
-.from("#frog",{opacity:0})
-.to("#frog",{opacity:0})
+// .from("#frog",{opacity:0})
+// .to("#frog",{opacity:0})
 
-.from("#theory",{opacity:0})
-.to("#theory",{opacity:0})
-
-.from("#method",{opacity:0})
-.to("#method",{opacity:0})
+// gsap.timeline({
+//     scrollTrigger:{
+//         trigger:'#theory',
+//         start:'center center',
+//         end:'top bottom',
+//         scrub:1,
+//         markers:true,
+//         pin:true
+//     }
+// })
+// .from("#theory",{opacity:0})
+// .to("#theory",{opacity:0})

@@ -281,8 +281,9 @@ transition: 0.3s;
 }
 .identedpage{
     background-color: lightblue;
-    height: auto;
+    height: 100%;
     padding: 30px;
+    overflow: hidden;
     box-shadow: 1px 1px 80px inset white;
 }
 .heading{
