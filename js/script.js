@@ -104,13 +104,9 @@ formPopup.classList.remove('formActive');
 'login': function(variable){
     let myForm = document.querySelector('.signin-form');
     let myForm2 = document.querySelector('.signup-form');
-
     let formareainner = document.querySelector('.signin-signup');
-    let heading = document.querySelector('.signin-signup h2.success');
-    let submit = document.getElementById("submit");
     myForm.remove();
     myForm2.remove();
-    heading.innerHTML="Success";
     let html = '';
     html += `<div class="alert alert-success" role="alert">
                  You are successfully logged in
@@ -120,8 +116,10 @@ formPopup.classList.remove('formActive');
 
 'reload tab': function(variable){
     window.open('../','_self');
+},
+'deactivate': function(variable){
+    annyang.abort();
 }
-
 
 }
   
@@ -312,3 +310,10 @@ VanillaTilt.init(document.querySelectorAll(".line1 div"), {
     glare: true,
     "max-glare":1, 
 });
+
+// $("#submit").click(function() {
+//     $('.signin-form').remove();
+//     $('.signup-form').remove();
+//     $(".signin-signup h2").add.classList('.text-success');
+//     $(".signin-signup h2").add.innerHTML('.text-success');
+// });
