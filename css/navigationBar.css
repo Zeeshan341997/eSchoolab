@@ -509,7 +509,7 @@ nav a:hover {
 .VoiceToggleOn,.VoiceToggleOff{
   position: relative;
   display: block;
-  width: 50px;
+  width: 30px;
   height: 30px;
   border-radius: 35px;
   background-color: rgb(34, 144, 0);
@@ -528,7 +528,7 @@ nav a:hover {
   left: 0;
   width: 30px;
   height: 30px;
-  background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(73, 73, 73));
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0.287),rgb(73, 73, 73));
   border-radius: 50%;
   transition: 0.5s;
   transform: scale(0.9);

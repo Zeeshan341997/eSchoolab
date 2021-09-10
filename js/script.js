@@ -311,9 +311,7 @@ VanillaTilt.init(document.querySelectorAll(".line1 div"), {
     "max-glare":1, 
 });
 
-// $("#submit").click(function() {
-//     $('.signin-form').remove();
-//     $('.signup-form').remove();
-//     $(".signin-signup h2").add.classList('.text-success');
-//     $(".signin-signup h2").add.innerHTML('.text-success');
+// $(".voiceRecognitionBtn").click(function() {
+//     $('.VoiceToggleOn').toggle(add.annyang.start());
+//     $('.VoiceToggleOff').toggle(annyang.abort());
 // });
